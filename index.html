@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DTV Visa Consulting | Ken's Golf Bangkok × Premium Thailand Residency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+JP:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#020b18',
+              900: '#050d1a',
+              800: '#0a1628',
+              700: '#0f2044',
+              600: '#1a3a6b',
+              500: '#1e4a85',
+            },
+            gold: {
+              300: '#f0d060',
+              400: '#e8c040',
+              500: '#d4af37',
+              600: '#c9a84c',
+              700: '#a88a2e',
+              800: '#856b20',
+            }
+          },
+          fontFamily: {
+            serif:  ['Playfair Display', 'Noto Serif JP', 'serif'],
+            cormorant: ['Cormorant Garamond', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            noto: ['Noto Serif JP', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* ─── Base ─────────────────────────────────────── */
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #050d1a;
+      color: #e8e0d0;
+      font-family: 'Inter', 'Noto Serif JP', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ─── Gold Gradient Text ────────────────────────── */
+    .gold-text {
+      background: linear-gradient(135deg, #f0d060 0%, #d4af37 40%, #c9a84c 70%, #e8c040 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gold-text-static { color: #d4af37; }
+
+    /* ─── Gold Divider ──────────────────────────────── */
+    .gold-divider {
+      width: 80px; height: 2px;
+      background: linear-gradient(90deg, transparent, #d4af37, transparent);
+      margin: 0 auto;
+    }
+    .gold-divider-left {
+      width: 60px; height: 1px;
+      background: linear-gradient(90deg, #d4af37, transparent);
+    }
+
+    /* ─── Gold Button ───────────────────────────────── */
+    .btn-gold {
+      background: linear-gradient(135deg, #c9a84c 0%, #d4af37 50%, #e8c040 100%);
+      color: #050d1a;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-gold::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #e8c040 0%, #f0d060 50%, #d4af37 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .btn-gold:hover::before { opacity: 1; }
+    .btn-gold span { position: relative; z-index: 1; }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(212,175,55,0.4); }
+
+    .btn-outline-gold {
+      border: 1px solid #d4af37;
+      color: #d4af37;
+      letter-spacing: 0.08em;
+      transition: all 0.3s ease;
+      background: transparent;
+    }
+    .btn-outline-gold:hover {
+      background: rgba(212,175,55,0.1);
+      box-shadow: 0 0 20px rgba(212,175,55,0.2);
+    }
+
+    /* ─── Scroll Fade-In ────────────────────────────── */
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .fade-in-left { opacity: 0; transform: translateX(-30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in-left.visible { opacity: 1; transform: translateX(0); }
+    .fade-in-right { opacity: 0; transform: translateX(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in-right.visible { opacity: 1; transform: translateX(0); }
+    .fade-in-delay-1 { transition-delay: 0.15s; }
+    .fade-in-delay-2 { transition-delay: 0.3s; }
+    .fade-in-delay-3 { transition-delay: 0.45s; }
+    .fade-in-delay-4 { transition-delay: 0.6s; }
+
+    /* ─── Hero ──────────────────────────────────────── */
+    .hero-bg {
+      background:
+        linear-gradient(180deg, rgba(5,13,26,0.0) 0%, rgba(5,13,26,0.7) 60%, #050d1a 100%),
+        linear-gradient(135deg, #0a1628 0%, #1a3a6b 40%, #0f2044 70%, #050d1a 100%);
+      position: relative;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(212,175,55,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(26,58,107,0.4) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      background-image:
+        linear-gradient(rgba(212,175,55,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212,175,55,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      position: absolute; inset: 0; pointer-events: none;
+    }
+
+    /* ─── Badge ─────────────────────────────────────── */
+    .badge-gold {
+      background: linear-gradient(135deg, rgba(212,175,55,0.15), rgba(212,175,55,0.05));
+      border: 1px solid rgba(212,175,55,0.4);
+      backdrop-filter: blur(10px);
+    }
+    .badge-pulse {
+      animation: pulseBadge 2.5s ease-in-out infinite;
+    }
+    @keyframes pulseBadge {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(212,175,55,0.3); }
+      50% { box-shadow: 0 0 0 12px rgba(212,175,55,0); }
+    }
+
+    /* ─── Counter ───────────────────────────────────── */
+    .counter-number {
+      font-family: 'Cormorant Garamond', serif;
+      background: linear-gradient(135deg, #f0d060, #d4af37, #c9a84c);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+
+    /* ─── Card ──────────────────────────────────────── */
+    .card-navy {
+      background: linear-gradient(145deg, rgba(15,32,68,0.8), rgba(10,22,40,0.9));
+      border: 1px solid rgba(212,175,55,0.15);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+    .card-navy:hover {
+      border-color: rgba(212,175,55,0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 30px rgba(212,175,55,0.08);
+    }
+
+    /* ─── Section ───────────────────────────────────── */
+    .section-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #d4af37;
+    }
+    .section-title {
+      font-family: 'Playfair Display', 'Noto Serif JP', serif;
+      line-height: 1.3;
+    }
+
+    /* ─── Sticky Header ─────────────────────────────── */
+    #main-header {
+      transition: background 0.4s ease, box-shadow 0.4s ease;
+    }
+    #main-header.scrolled {
+      background: rgba(5,13,26,0.97) !important;
+      box-shadow: 0 1px 0 rgba(212,175,55,0.15), 0 4px 30px rgba(0,0,0,0.5);
+      backdrop-filter: blur(20px);
+    }
+
+    /* ─── Trust Logo ────────────────────────────────── */
+    .trust-logo {
+      opacity: 0.35;
+      filter: grayscale(100%) brightness(2);
+      transition: all 0.3s ease;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #e8e0d0;
+    }
+    .trust-logo:hover { opacity: 0.7; filter: none; }
+
+    /* ─── Timeline ──────────────────────────────────── */
+    .timeline-line {
+      background: linear-gradient(180deg, #d4af37 0%, rgba(212,175,55,0.2) 100%);
+    }
+    .timeline-dot {
+      background: linear-gradient(135deg, #d4af37, #c9a84c);
+      box-shadow: 0 0 0 4px rgba(212,175,55,0.2), 0 0 20px rgba(212,175,55,0.3);
+    }
+
+    /* ─── Accordion ─────────────────────────────────── */
+    .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+    .faq-content.open { max-height: 300px; }
+    .faq-item { border-bottom: 1px solid rgba(212,175,55,0.12); }
+    .faq-chevron { transition: transform 0.3s ease; }
+    .faq-chevron.open { transform: rotate(180deg); }
+
+    /* ─── Plan Card ─────────────────────────────────── */
+    .plan-card {
+      background: linear-gradient(145deg, rgba(15,32,68,0.7), rgba(5,13,26,0.9));
+      border: 1px solid rgba(212,175,55,0.15);
+      transition: all 0.4s ease;
+      position: relative; overflow: hidden;
+    }
+    .plan-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent, #d4af37, transparent);
+      opacity: 0; transition: opacity 0.4s ease;
+    }
+    .plan-card:hover::before { opacity: 1; }
+    .plan-card:hover {
+      border-color: rgba(212,175,55,0.4);
+      transform: translateY(-6px);
+      box-shadow: 0 30px 70px rgba(0,0,0,0.5), 0 0 40px rgba(212,175,55,0.1);
+    }
+    .plan-card.featured {
+      border-color: rgba(212,175,55,0.5);
+      background: linear-gradient(145deg, rgba(26,58,107,0.5), rgba(15,32,68,0.9));
+    }
+    .plan-card.featured::before { opacity: 1; }
+
+    /* ─── Form ──────────────────────────────────────── */
+    .form-input {
+      background: rgba(15,32,68,0.6);
+      border: 1px solid rgba(212,175,55,0.2);
+      color: #e8e0d0;
+      transition: all 0.3s ease;
+    }
+    .form-input:focus {
+      outline: none;
+      border-color: rgba(212,175,55,0.6);
+      background: rgba(15,32,68,0.8);
+      box-shadow: 0 0 0 3px rgba(212,175,55,0.1);
+    }
+    .form-input::placeholder { color: rgba(232,224,208,0.3); }
+
+    /* ─── Floating CTA ──────────────────────────────── */
+    #floating-cta {
+      opacity: 0; transform: translateY(20px);
+      transition: all 0.5s ease;
+      pointer-events: none;
+    }
+    #floating-cta.visible { opacity: 1; transform: translateY(0); pointer-events: all; }
+
+    /* ─── Lang Switch ───────────────────────────────── */
+    .lang-btn { color: rgba(232,224,208,0.5); font-size: 0.7rem; letter-spacing: 0.1em; cursor: pointer; transition: color 0.3s; }
+    .lang-btn.active, .lang-btn:hover { color: #d4af37; }
+
+    /* ─── Testimonial ───────────────────────────────── */
+    .testimonial-card {
+      background: linear-gradient(145deg, rgba(15,32,68,0.6), rgba(10,22,40,0.8));
+      border: 1px solid rgba(212,175,55,0.12);
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: '\201C';
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 6rem; line-height: 1;
+      color: rgba(212,175,55,0.1);
+      position: absolute; top: -10px; left: 20px;
+    }
+
+    /* ─── Marquee ───────────────────────────────────── */
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .marquee-inner { display: flex; animation: marquee 30s linear infinite; white-space: nowrap; }
+    .marquee-inner:hover { animation-play-state: paused; }
+
+    /* ─── Star ──────────────────────────────────────── */
+    .star-gold { color: #d4af37; }
+
+    /* ─── Scroll indicator ──────────────────────────── */
+    @keyframes scrollBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+    .scroll-indicator { animation: scrollBounce 1.8s ease-in-out infinite; }
+
+    /* ─── Number shine ──────────────────────────────── */
+    @keyframes shine {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+    .number-shine {
+      background: linear-gradient(90deg, #c9a84c 0%, #f0d060 30%, #d4af37 50%, #f0d060 70%, #c9a84c 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      animation: shine 4s linear infinite;
+    }
+
+    /* ─── Mobile menu ───────────────────────────────── */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+
+    /* ─── Responsive tweaks ─────────────────────────── */
+    @media (max-width: 768px) {
+      .hero-title { font-size: 2.2rem !important; }
+      .hero-sub { font-size: 1rem !important; }
+      .counter-number { font-size: 3.5rem !important; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     FLOATING CTA (mobile bottom)
+     ═══════════════════════════════════════════════════════ -->
+<div id="floating-cta" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 md:hidden">
+  <a href="#contact" class="btn-gold px-8 py-3.5 rounded-full text-sm font-bold tracking-widest shadow-2xl flex items-center gap-2">
+    <span><i class="fas fa-comments mr-1"></i> 無料相談を予約する</span>
+  </a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     1. HEADER
+     ═══════════════════════════════════════════════════════ -->
+<header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-transparent">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full border border-gold-500 flex items-center justify-center">
+        <i class="fas fa-crown text-gold-500 text-sm"></i>
+      </div>
+      <div>
+        <div class="font-serif text-lg font-semibold tracking-widest leading-tight">
+          <span class="gold-text">DTV</span><span class="text-white"> ELITE</span>
+        </div>
+        <div class="text-[9px] text-gold-600 tracking-[0.25em] uppercase">Thailand Premium Residency</div>
+      </div>
+    </div>
+
+    <!-- Nav (desktop) -->
+    <nav class="hidden lg:flex items-center gap-8 text-xs tracking-widest uppercase text-white/50">
+      <a href="#why-us" class="hover:text-gold-500 transition-colors">実績</a>
+      <a href="#plans" class="hover:text-gold-500 transition-colors">プラン</a>
+      <a href="#flow" class="hover:text-gold-500 transition-colors">流れ</a>
+      <a href="#faq" class="hover:text-gold-500 transition-colors">FAQ</a>
+    </nav>
+
+    <!-- Right: Lang + CTA -->
+    <div class="flex items-center gap-4">
+      <!-- Language -->
+      <div class="hidden sm:flex items-center gap-2 border border-white/10 rounded-full px-3 py-1.5">
+        <button class="lang-btn active" onclick="setLang('jp')">JP</button>
+        <span class="text-white/20 text-xs">|</span>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+        <span class="text-white/20 text-xs">|</span>
+        <button class="lang-btn" onclick="setLang('cn')">中文</button>
+      </div>
+
+      <!-- CTA -->
+      <a href="#contact" class="hidden md:inline-flex btn-gold px-5 py-2.5 rounded-full text-xs tracking-widest items-center gap-2">
+        <span><i class="fas fa-calendar-check mr-1"></i> 無料相談</span>
+      </a>
+
+      <!-- Hamburger -->
+      <button id="hamburger" class="lg:hidden text-white/60 hover:text-gold-500 transition-colors" onclick="toggleMenu()">
+        <i class="fas fa-bars text-lg"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="bg-navy-900/98 backdrop-blur-xl border-t border-gold-500/10 px-6 py-6">
+    <nav class="flex flex-col gap-5 text-sm tracking-widest uppercase text-white/60">
+      <a href="#why-us" class="hover:text-gold-500 transition-colors" onclick="toggleMenu()">実績・選ばれる理由</a>
+      <a href="#plans" class="hover:text-gold-500 transition-colors" onclick="toggleMenu()">料金プラン</a>
+      <a href="#flow" class="hover:text-gold-500 transition-colors" onclick="toggleMenu()">ご利用の流れ</a>
+      <a href="#faq" class="hover:text-gold-500 transition-colors" onclick="toggleMenu()">よくある質問</a>
+      <a href="#contact" class="btn-gold px-6 py-3 rounded-full text-center mt-2" onclick="toggleMenu()">
+        <span>無料相談を予約する</span>
+      </a>
+    </nav>
+    <div class="flex gap-4 mt-6 pt-4 border-t border-white/5">
+      <button class="lang-btn active text-sm" onclick="setLang('jp')">日本語</button>
+      <button class="lang-btn text-sm" onclick="setLang('en')">English</button>
+      <button class="lang-btn text-sm" onclick="setLang('cn')">中文</button>
+    </div>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     2. HERO
+     ═══════════════════════════════════════════════════════ -->
+<section class="hero-bg relative min-h-screen flex items-center justify-center pt-20 pb-20 overflow-hidden">
+  <div class="hero-grid"></div>
+
+  <!-- Decorative circles -->
+  <div class="absolute top-1/4 right-10 w-64 h-64 rounded-full border border-gold-500/5 pointer-events-none"></div>
+  <div class="absolute top-1/4 right-10 w-48 h-48 rounded-full border border-gold-500/10 pointer-events-none" style="top: calc(25% + 8px); right: calc(2.5rem + 8px);"></div>
+  <div class="absolute bottom-1/3 left-10 w-80 h-80 rounded-full border border-gold-500/5 pointer-events-none"></div>
+
+  <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+
+    <!-- Label -->
+    <div class="fade-in section-label mb-6">
+      Ken's Golf Bangkok × DTV Elite Consulting
+    </div>
+
+    <!-- Main Title -->
+    <h1 class="fade-in fade-in-delay-1 hero-title font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
+      タイの最上級の日常へ。<br />
+      <span class="gold-text italic">DTVビザ取得を、</span><br />
+      確実かつスムーズに。
+    </h1>
+
+    <!-- Sub Copy -->
+    <p class="fade-in fade-in-delay-2 hero-sub text-base md:text-lg text-white/65 max-w-2xl mx-auto leading-relaxed mb-10">
+      累計 <span class="text-gold-400 font-semibold">100名以上</span> の取得実績。<br class="sm:hidden" />
+      トップクラスの専門コンサルタントが、あなたのタイ<span class="text-gold-400">5年滞在</span>を完全サポートします。
+    </p>
+
+    <!-- Badges -->
+    <div class="fade-in fade-in-delay-2 flex flex-wrap items-center justify-center gap-4 mb-12">
+      <div class="badge-gold badge-pulse rounded-full px-5 py-2.5 flex items-center gap-2.5 text-sm">
+        <i class="fas fa-shield-check text-gold-400"></i>
+        <span class="font-semibold text-white">DTVビザ取得実績 <span class="text-gold-300">100名突破</span></span>
+      </div>
+      <div class="badge-gold rounded-full px-5 py-2.5 flex items-center gap-2.5 text-sm">
+        <i class="fas fa-star text-gold-400"></i>
+        <span class="font-semibold text-white">顧客満足度 <span class="text-gold-300">98%</span></span>
+      </div>
+      <div class="badge-gold rounded-full px-5 py-2.5 flex items-center gap-2.5 text-sm">
+        <i class="fas fa-globe-asia text-gold-400"></i>
+        <span class="font-semibold text-white">多言語対応 <span class="text-gold-300">JP / EN / CN</span></span>
+      </div>
+    </div>
+
+    <!-- CTA Buttons -->
+    <div class="fade-in fade-in-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="#contact" class="btn-gold px-10 py-4 rounded-full text-sm tracking-widest font-bold w-full sm:w-auto">
+        <span><i class="fas fa-calendar-check mr-2"></i>無料相談を予約する</span>
+      </a>
+      <a href="#plans" class="btn-outline-gold px-10 py-4 rounded-full text-sm tracking-widest w-full sm:w-auto">
+        プランを見る <i class="fas fa-arrow-down ml-2"></i>
+      </a>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator mt-16 flex flex-col items-center gap-2 opacity-30">
+      <span class="text-xs tracking-widest uppercase text-gold-600">Scroll</span>
+      <i class="fas fa-chevron-down text-gold-600 text-xs"></i>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     3. TRUST / AS SEEN IN
+     ═══════════════════════════════════════════════════════ -->
+<section class="py-16 border-y border-white/5" style="background: rgba(10,22,40,0.4);">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="text-center text-xs tracking-[0.3em] uppercase text-white/25 mb-10">Trusted & Recognised By</p>
+
+    <!-- Marquee -->
+    <div class="overflow-hidden">
+      <div class="marquee-inner gap-16 items-center">
+        <!-- Repeat twice for seamless loop -->
+        <div class="flex gap-16 items-center pr-16">
+          <span class="trust-logo font-serif text-lg tracking-widest">THE BANGKOK POST</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+          <span class="trust-logo font-sans tracking-[0.3em] text-sm">NIKKEI ASIA</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+          <span class="trust-logo font-serif tracking-widest">BOI THAILAND</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+          <span class="trust-logo font-sans tracking-[0.2em] text-sm">IMMIGRATION BUREAU</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+          <span class="trust-logo font-serif text-lg tracking-wider">KEN'S GOLF BANGKOK</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+          <span class="trust-logo font-sans tracking-widest text-sm">TOURISM AUTHORITY</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+          <span class="trust-logo font-serif tracking-widest">BANGKOK EXPATS</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+        </div>
+        <!-- duplicate -->
+        <div class="flex gap-16 items-center pr-16">
+          <span class="trust-logo font-serif text-lg tracking-widest">THE BANGKOK POST</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+          <span class="trust-logo font-sans tracking-[0.3em] text-sm">NIKKEI ASIA</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+          <span class="trust-logo font-serif tracking-widest">BOI THAILAND</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+          <span class="trust-logo font-sans tracking-[0.2em] text-sm">IMMIGRATION BUREAU</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+          <span class="trust-logo font-serif text-lg tracking-wider">KEN'S GOLF BANGKOK</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+          <span class="trust-logo font-sans tracking-widest text-sm">TOURISM AUTHORITY</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+          <span class="trust-logo font-serif tracking-widest">BANGKOK EXPATS</span>
+          <span class="trust-logo mx-2 text-gold-600/30">✦</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     4. TRACK RECORD
+     ═══════════════════════════════════════════════════════ -->
+<section id="track-record" class="py-28 relative">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Section Label -->
+    <div class="text-center mb-20 fade-in">
+      <p class="section-label mb-3">Track Record</p>
+      <div class="gold-divider mb-6"></div>
+      <h2 class="section-title text-3xl md:text-4xl font-bold text-white">
+        数字が証明する、<span class="gold-text">圧倒的な実績</span>
+      </h2>
+    </div>
+
+    <!-- Giant Counter -->
+    <div class="fade-in mb-16">
+      <div class="card-navy rounded-3xl p-10 md:p-16 text-center relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute top-0 left-0 w-full h-1" style="background: linear-gradient(90deg, transparent, #d4af37, transparent);"></div>
+          <div class="absolute bottom-0 right-0 w-64 h-64 rounded-full" style="background: radial-gradient(circle, rgba(212,175,55,0.05) 0%, transparent 70%);"></div>
+        </div>
+
+        <p class="section-label mb-4">累計 DTVビザ取得サポート数</p>
+        <div class="flex items-end justify-center gap-2 mb-4">
+          <span id="mainCounter" class="counter-number number-shine" style="font-size: clamp(5rem, 15vw, 9rem); line-height: 1; font-weight: 700;">0</span>
+          <span class="counter-number number-shine" style="font-size: clamp(2rem, 5vw, 4rem); line-height: 1.5; font-weight: 700;">名以上</span>
+        </div>
+        <p class="text-white/40 text-sm tracking-widest uppercase">Successful DTV Visa Applications</p>
+
+        <!-- Stars -->
+        <div class="flex justify-center gap-1 mt-6">
+          <i class="fas fa-star star-gold text-lg"></i>
+          <i class="fas fa-star star-gold text-lg"></i>
+          <i class="fas fa-star star-gold text-lg"></i>
+          <i class="fas fa-star star-gold text-lg"></i>
+          <i class="fas fa-star star-gold text-lg"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card-navy rounded-2xl p-7 text-center fade-in">
+        <div class="text-4xl md:text-5xl counter-number font-bold mb-2" data-target="98">0</div>
+        <div class="text-gold-600 text-xl mb-1">%</div>
+        <p class="text-white/50 text-xs tracking-widest uppercase">顧客満足度</p>
+      </div>
+      <div class="card-navy rounded-2xl p-7 text-center fade-in fade-in-delay-1">
+        <div class="text-4xl md:text-5xl counter-number font-bold mb-2" data-target="14">0</div>
+        <div class="text-gold-600 text-base mb-1">日～</div>
+        <p class="text-white/50 text-xs tracking-widest uppercase">最短取得日数</p>
+      </div>
+      <div class="card-navy rounded-2xl p-7 text-center fade-in fade-in-delay-2">
+        <div class="text-4xl md:text-5xl counter-number font-bold mb-2" data-target="12">0</div>
+        <div class="text-gold-600 text-base mb-1">ヶ国</div>
+        <p class="text-white/50 text-xs tracking-widest uppercase">サポート国籍数</p>
+      </div>
+      <div class="card-navy rounded-2xl p-7 text-center fade-in fade-in-delay-3">
+        <div class="text-4xl md:text-5xl counter-number font-bold mb-2" data-target="5">0</div>
+        <div class="text-gold-600 text-base mb-1">年</div>
+        <p class="text-white/50 text-xs tracking-widest uppercase">ビザ有効期限</p>
+      </div>
+    </div>
+
+    <!-- Nationality breakdown -->
+    <div class="mt-10 card-navy rounded-2xl p-8 fade-in">
+      <h3 class="text-center font-serif text-lg text-white/80 mb-8 tracking-wider">国籍別サポート実績</h3>
+      <div class="space-y-5">
+        <div>
+          <div class="flex justify-between text-sm mb-2">
+            <span class="text-white/60 flex items-center gap-2"><span class="text-base">🇯🇵</span> 日本</span>
+            <span class="text-gold-400 font-semibold">42%</span>
+          </div>
+          <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+            <div class="h-full rounded-full bg-gradient-to-r from-gold-600 to-gold-400 bar-fill" data-width="42"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-2">
+            <span class="text-white/60 flex items-center gap-2"><span class="text-base">🇨🇳</span> 中国</span>
+            <span class="text-gold-400 font-semibold">31%</span>
+          </div>
+          <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+            <div class="h-full rounded-full bg-gradient-to-r from-gold-600 to-gold-400 bar-fill" data-width="31"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-2">
+            <span class="text-white/60 flex items-center gap-2"><span class="text-base">🌏</span> その他アジア</span>
+            <span class="text-gold-400 font-semibold">15%</span>
+          </div>
+          <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+            <div class="h-full rounded-full bg-gradient-to-r from-gold-600 to-gold-400 bar-fill" data-width="15"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-2">
+            <span class="text-white/60 flex items-center gap-2"><span class="text-base">🌍</span> 欧米・その他</span>
+            <span class="text-gold-400 font-semibold">12%</span>
+          </div>
+          <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
+            <div class="h-full rounded-full bg-gradient-to-r from-gold-600 to-gold-400 bar-fill" data-width="12"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     5. WHY US
+     ═══════════════════════════════════════════════════════ -->
+<section id="why-us" class="py-28 relative" style="background: linear-gradient(180deg, #050d1a 0%, #0a1628 50%, #050d1a 100%);">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="text-center mb-20 fade-in">
+      <p class="section-label mb-3">Why Choose Us</p>
+      <div class="gold-divider mb-6"></div>
+      <h2 class="section-title text-3xl md:text-4xl font-bold text-white">
+        私たちが選ばれる<span class="gold-text">3つの理由</span>
+      </h2>
+      <p class="text-white/40 mt-4 text-sm max-w-xl mx-auto leading-relaxed">
+        DTVビザ取得の先駆者として、独自のルートと実績が生み出す<br />圧倒的な優位性がここにあります。
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="card-navy rounded-3xl p-8 fade-in-left relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-40 h-40 rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(212,175,55,0.06) 0%, transparent 70%); transform: translate(30%, -30%);"></div>
+        <div class="w-14 h-14 rounded-2xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center mb-6">
+          <i class="fas fa-database text-gold-400 text-xl"></i>
+        </div>
+        <div class="text-gold-500 text-xs tracking-[0.2em] uppercase mb-3 font-semibold">01 ／ ビッグデータ活用</div>
+        <h3 class="font-serif text-xl text-white mb-4 leading-snug">100名以上の事例に基づく<br />最適申請ルートの提案</h3>
+        <p class="text-white/45 text-sm leading-relaxed">
+          過去の成功・失敗事例を蓄積・分析。お客様の国籍・職業・資産状況ごとに、最も確実かつ迅速な申請戦略をカスタマイズしてご提案します。
+        </p>
+        <div class="gold-divider-left mt-6"></div>
+      </div>
+
+      <!-- Card 2 (Center - highlighted) -->
+      <div class="card-navy rounded-3xl p-8 fade-in relative overflow-hidden" style="border-color: rgba(212,175,55,0.35);">
+        <div class="absolute top-0 left-0 right-0 h-0.5" style="background: linear-gradient(90deg, transparent, #d4af37, transparent);"></div>
+        <div class="absolute top-4 right-4">
+          <span class="bg-gold-500 text-navy-900 text-[10px] font-bold tracking-widest px-3 py-1 rounded-full uppercase">Most Popular</span>
+        </div>
+        <div class="w-14 h-14 rounded-2xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center mb-6">
+          <i class="fas fa-crown text-gold-400 text-xl"></i>
+        </div>
+        <div class="text-gold-500 text-xs tracking-[0.2em] uppercase mb-3 font-semibold">02 ／ VIP完全代行</div>
+        <h3 class="font-serif text-xl text-white mb-4 leading-snug">煩雑な書類手配から<br />ゴルフスクール連携まで丸投げ</h3>
+        <p class="text-white/45 text-sm leading-relaxed">
+          提携スクール「Ken's Golf Bangkok」との独占ルートを活用。冷房完備のインドアゴルフ施設でのレッスン証明取得から、大使館への申請書類作成まで一切をお任せください。
+        </p>
+        <div class="gold-divider-left mt-6"></div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card-navy rounded-3xl p-8 fade-in-right relative overflow-hidden">
+        <div class="absolute bottom-0 left-0 w-40 h-40 rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(212,175,55,0.05) 0%, transparent 70%); transform: translate(-30%, 30%);"></div>
+        <div class="w-14 h-14 rounded-2xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center mb-6">
+          <i class="fas fa-language text-gold-400 text-xl"></i>
+        </div>
+        <div class="text-gold-500 text-xs tracking-[0.2em] uppercase mb-3 font-semibold">03 ／ 多言語専門スタッフ</div>
+        <h3 class="font-serif text-xl text-white mb-4 leading-snug">ビザのプロフェッショナルによる<br />確実で迅速なサポート</h3>
+        <p class="text-white/45 text-sm leading-relaxed">
+          日本語・英語・中国語・タイ語に対応した専門コンサルタントが担当。どの国籍のお客様にも、文化・言語の壁なく高品質なサービスを提供します。
+        </p>
+        <div class="gold-divider-left mt-6"></div>
+      </div>
+    </div>
+
+    <!-- DTV About Banner -->
+    <div class="mt-14 fade-in">
+      <div class="card-navy rounded-2xl p-8 md:p-10" style="background: linear-gradient(135deg, rgba(26,58,107,0.4), rgba(10,22,40,0.8));">
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+          <div class="flex-shrink-0">
+            <div class="w-16 h-16 rounded-full bg-gold-500/10 border border-gold-500/20 flex items-center justify-center">
+              <span class="text-2xl">🇹🇭</span>
+            </div>
+          </div>
+          <div>
+            <div class="section-label mb-2">DTVビザ（Destination Thailand Visa）とは？</div>
+            <h3 class="font-serif text-lg md:text-xl text-white mb-3">タイ政府が新設した「ソフトパワービザ」。最大5年間の長期滞在が可能。</h3>
+            <p class="text-white/45 text-sm leading-relaxed">
+              2024年にタイ政府が新設したDTV（Destination Thailand Visa）は、スポーツ・文化・ウェルネスなど「ソフトパワー活動」を目的とした長期滞在ビザ。
+              ゴルフスクール（Ken's Golf Bangkok）への受講を名目として申請でき、<span class="text-gold-400">1回の申請で最大180日×2の滞在、計5年間の有効期限</span>を享受できます。
+              私たちはこのルートでの取得を日本人として初めて成功させた実績を持ちます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     6. TESTIMONIALS
+     ═══════════════════════════════════════════════════════ -->
+<section id="testimonials" class="py-28">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="text-center mb-20 fade-in">
+      <p class="section-label mb-3">Client Voices</p>
+      <div class="gold-divider mb-6"></div>
+      <h2 class="section-title text-3xl md:text-4xl font-bold text-white">
+        成功者たちの<span class="gold-text">リアルな声</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Testimonial 1: Japanese CEO -->
+      <div class="testimonial-card rounded-3xl p-8 fade-in">
+        <div class="flex items-center gap-1 mb-6">
+          <i class="fas fa-star star-gold text-sm"></i><i class="fas fa-star star-gold text-sm"></i><i class="fas fa-star star-gold text-sm"></i><i class="fas fa-star star-gold text-sm"></i><i class="fas fa-star star-gold text-sm"></i>
+        </div>
+        <p class="text-white/70 text-sm leading-relaxed mb-8 relative z-10">
+          「複数の代理店に相談しましたが、どこも曖昧な回答ばかり。こちらは<strong class="text-white">明確な根拠と過去の成功事例</strong>を提示してくれ、書類準備から申請まで一切不安がありませんでした。バンコクでのゴルフも最高の体験でした。」
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-navy-600 border border-gold-500/20 flex items-center justify-center text-lg font-bold text-gold-400 flex-shrink-0">
+            T
+          </div>
+          <div>
+            <div class="text-white font-semibold text-sm">田中 誠一郎 様</div>
+            <div class="text-white/35 text-xs tracking-wider mt-0.5">日本 ／ IT企業 代表取締役 ／ 52歳</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2: Chinese Investor -->
+      <div class="testimonial-card rounded-3xl p-8 fade-in fade-in-delay-1">
+        <div class="flex items-center gap-1 mb-6">
+          <i class="fas fa-star star-gold text-sm"></i><i class="fas fa-star star-gold text-sm"></i><i class="fas fa-star star-gold text-sm"></i><i class="fas fa-star star-gold text-sm"></i><i class="fas fa-star star-gold text-sm"></i>
+        </div>
+        <p class="text-white/70 text-sm leading-relaxed mb-8 relative z-10">
+          "The team handled everything flawlessly — from my <strong class="text-white">golf enrollment at Ken's</strong> to the embassy appointment. As a Chinese investor managing assets across Southeast Asia, Bangkok is now my base. <strong class="text-white">Approval in just 18 days.</strong>"
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-navy-600 border border-gold-500/20 flex items-center justify-center text-lg font-bold text-gold-400 flex-shrink-0">
+            W
+          </div>
+          <div>
+            <div class="text-white font-semibold text-sm">Wei, Zhang 様</div>
+            <div class="text-white/35 text-xs tracking-wider mt-0.5">中国 ／ 不動産投資家 ／ 45歳</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3: European Freelancer -->
+      <div class="testimonial-card rounded-3xl p-8 fade-in fade-in-delay-2">
+        <div class="flex items-center gap-1 mb-6">
+          <i class="fas fa-star star-gold text-sm"></i><i class="fas fa-star star-gold text-sm"></i><i class="fas fa-star star-gold text-sm"></i><i class="fas fa-star star-gold text-sm"></i><i class="fas fa-star star-gold text-sm"></i>
+        </div>
+        <p class="text-white/70 text-sm leading-relaxed mb-8 relative z-10">
+          "As a digital nomad from Germany, I had tried other Thailand visa routes before — all too complicated. DTV Elite made the whole process <strong class="text-white">incredibly smooth</strong>. The concierge service in Bangkok exceeded every expectation."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-navy-600 border border-gold-500/20 flex items-center justify-center text-lg font-bold text-gold-400 flex-shrink-0">
+            M
+          </div>
+          <div>
+            <div class="text-white font-semibold text-sm">Marcus B. 様</div>
+            <div class="text-white/35 text-xs tracking-wider mt-0.5">ドイツ ／ フリーランス・デザイナー ／ 38歳</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     7. PLANS
+     ═══════════════════════════════════════════════════════ -->
+<section id="plans" class="py-28 relative" style="background: linear-gradient(180deg, #050d1a 0%, #0a1628 50%, #050d1a 100%);">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="text-center mb-20 fade-in">
+      <p class="section-label mb-3">Premium Plans</p>
+      <div class="gold-divider mb-6"></div>
+      <h2 class="section-title text-3xl md:text-4xl font-bold text-white">
+        あなたに最適な<span class="gold-text">プランを選ぶ</span>
+      </h2>
+      <p class="text-white/40 text-sm mt-4">すべてのプランにKen's Golf Bangkok受講証明の取得サポートが含まれます</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 items-stretch">
+
+      <!-- Silver -->
+      <div class="plan-card rounded-3xl p-8 flex flex-col fade-in">
+        <div class="mb-8">
+          <p class="section-label mb-2">Silver</p>
+          <h3 class="font-serif text-2xl text-white mb-3">シルバー<br />プラン</h3>
+          <p class="text-white/40 text-xs leading-relaxed">DTVビザ申請に必要な受入レターと、基本ゴルフプログラムを含む入門プラン。</p>
+        </div>
+        <div class="mb-8">
+          <div class="flex items-end gap-2">
+            <span class="text-4xl font-serif font-bold gold-text">20,000</span>
+            <span class="text-white/50 text-base mb-1">THB</span>
+            <span class="text-white/30 text-sm mb-1">／年</span>
+          </div>
+          <p class="text-white/25 text-xs mt-1">約 ¥85,000〜</p>
+        </div>
+        <ul class="space-y-3 text-sm text-white/60 flex-1 mb-8">
+          <li class="flex items-start gap-3"><i class="fas fa-check text-gold-500 mt-0.5 flex-shrink-0"></i> DTV申請用・公式受入レター発行</li>
+          <li class="flex items-start gap-3"><i class="fas fa-check text-gold-500 mt-0.5 flex-shrink-0"></i> 月1回インドアゴルフ施設利用（年12回）</li>
+          <li class="flex items-start gap-3"><i class="fas fa-check text-gold-500 mt-0.5 flex-shrink-0"></i> 月1回動画カリキュラム視聴（年12回）</li>
+          <li class="flex items-start gap-3"><i class="fas fa-check text-gold-500 mt-0.5 flex-shrink-0"></i> 合計：年間24セッション／12ヶ月</li>
+          <li class="flex items-start gap-3 text-white/25"><i class="fas fa-times text-white/15 mt-0.5 flex-shrink-0"></i> グループ・プライベートレッスン</li>
+          <li class="flex items-start gap-3 text-white/25"><i class="fas fa-times text-white/15 mt-0.5 flex-shrink-0"></i> 打ち放題・優先予約</li>
+        </ul>
+        <a href="#contact" class="btn-outline-gold py-3.5 rounded-full text-sm tracking-widest text-center">
+          相談する <i class="fas fa-arrow-right ml-2 text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Gold (Featured) -->
+      <div class="plan-card featured rounded-3xl p-8 flex flex-col fade-in fade-in-delay-1 relative">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+          <span class="bg-gradient-to-r from-gold-600 to-gold-400 text-navy-900 text-[10px] font-bold tracking-[0.2em] px-5 py-1.5 rounded-full uppercase shadow-lg">Most Popular</span>
+        </div>
+        <div class="mb-8 pt-4">
+          <p class="section-label mb-2">Gold</p>
+          <h3 class="font-serif text-2xl text-white mb-3">ゴールド<br />プラン</h3>
+          <p class="text-white/40 text-xs leading-relaxed">セミプライベートレッスンと打ち放題でゴルフ上達とビザ取得を両立。</p>
+        </div>
+        <div class="mb-8">
+          <div class="flex items-end gap-2">
+            <span class="text-4xl font-serif font-bold gold-text">50,000</span>
+            <span class="text-white/50 text-base mb-1">THB</span>
+            <span class="text-white/30 text-sm mb-1">／年</span>
+          </div>
+          <p class="text-white/25 text-xs mt-1">約 ¥210,000〜</p>
+        </div>
+        <ul class="space-y-3 text-sm text-white/60 flex-1 mb-8">
+          <li class="flex items-start gap-3"><i class="fas fa-check text-gold-400 mt-0.5 flex-shrink-0"></i> DTV申請用・公式受入レター発行</li>
+          <li class="flex items-start gap-3"><i class="fas fa-check text-gold-400 mt-0.5 flex-shrink-0"></i> <strong class="text-white">年間12回セミプライベートレッスン</strong></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check text-gold-400 mt-0.5 flex-shrink-0"></i> <strong class="text-white">提携インドア練習場 打ち放題</strong></li>
+          <li class="flex items-start gap-3"><i class="fas fa-check text-gold-400 mt-0.5 flex-shrink-0"></i> 優先予約権</li>
+          <li class="flex items-start gap-3"><i class="fas fa-check text-gold-400 mt-0.5 flex-shrink-0"></i> 合計：年間24セッション／12ヶ月</li>
+          <li class="flex items-start gap-3 text-white/25"><i class="fas fa-times text-white/15 mt-0.5 flex-shrink-0"></i> マンツーマンレッスン</li>
+        </ul>
+        <a href="#contact" class="btn-gold py-3.5 rounded-full text-sm tracking-widest text-center">
+          <span>このプランを選ぶ <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+        </a>
+      </div>
+
+      <!-- Platinum -->
+      <div class="plan-card rounded-3xl p-8 flex flex-col fade-in fade-in-delay-2 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(circle at 80% 20%, rgba(212,175,55,0.06) 0%, transparent 60%);"></div>
+        <div class="mb-8">
+          <p class="section-label mb-2">Platinum</p>
+          <h3 class="font-serif text-2xl text-white mb-3">プラチナム<br />プラン</h3>
+          <p class="text-white/40 text-xs leading-relaxed">マンツーマンレッスンとスイング診断で、本格的なゴルフ上達を追求。</p>
+        </div>
+        <div class="mb-8">
+          <div class="flex items-end gap-2">
+            <span class="text-4xl font-serif font-bold gold-text">80,000</span>
+            <span class="text-white/50 text-base mb-1">THB</span>
+            <span class="text-white/30 text-sm mb-1">／年</span>
+          </div>
+          <p class="text-white/25 text-xs mt-1">約 ¥335,000〜</p>
+        </div>
+        <ul class="space-y-3 text-sm text-white/60 flex-1 mb-8">
+          <li class="flex items-start gap-3"><i class="fas fa-crown text-gold-400 mt-0.5 flex-shrink-0"></i> DTV申請用・公式受入レター発行</li>
+          <li class="flex items-start gap-3"><i class="fas fa-crown text-gold-400 mt-0.5 flex-shrink-0"></i> <strong class="text-white">年間24回マンツーマンレッスン</strong></li>
+          <li class="flex items-start gap-3"><i class="fas fa-crown text-gold-400 mt-0.5 flex-shrink-0"></i> <strong class="text-white">スイング診断（年2回）</strong>by Ken Pro</li>
+          <li class="flex items-start gap-3"><i class="fas fa-crown text-gold-400 mt-0.5 flex-shrink-0"></i> 打ち放題・最優先予約権</li>
+          <li class="flex items-start gap-3"><i class="fas fa-crown text-gold-400 mt-0.5 flex-shrink-0"></i> 合計：年間24セッション／12ヶ月</li>
+        </ul>
+        <a href="#contact" class="btn-gold py-3.5 rounded-full text-sm tracking-widest text-center">
+          <span><i class="fas fa-crown mr-2"></i>このプランを選ぶ</span>
+        </a>
+      </div>
+
+    </div>
+
+    <p class="text-center text-white/20 text-xs mt-10">※ 全プランにDTVビザ申請代行費用は含まれません。申請代行は別途ご相談ください。為替レートにより円換算は変動します。</p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     8. FLOW
+     ═══════════════════════════════════════════════════════ -->
+<section id="flow" class="py-28">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <div class="text-center mb-20 fade-in">
+      <p class="section-label mb-3">Road Map</p>
+      <div class="gold-divider mb-6"></div>
+      <h2 class="section-title text-3xl md:text-4xl font-bold text-white">
+        申し込みから入国まで<br /><span class="gold-text">5つのステップ</span>
+      </h2>
+    </div>
+
+    <!-- Timeline -->
+    <div class="relative">
+      <!-- Vertical line -->
+      <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px timeline-line md:-translate-x-px"></div>
+
+      <div class="space-y-12">
+
+        <!-- Step 1 -->
+        <div class="flex items-start gap-8 md:gap-0 fade-in">
+          <div class="relative flex-shrink-0 w-16 md:absolute md:left-1/2 md:-translate-x-1/2">
+            <div class="timeline-dot w-8 h-8 rounded-full flex items-center justify-center text-navy-900 font-bold text-sm z-10 relative">1</div>
+          </div>
+          <div class="md:w-5/12 md:ml-auto md:pl-10 card-navy rounded-2xl p-6">
+            <div class="text-gold-500 text-xs tracking-widest uppercase mb-2">Day 1 — 無料相談</div>
+            <h3 class="font-serif text-lg text-white mb-2">無料カウンセリング</h3>
+            <p class="text-white/45 text-sm leading-relaxed">お客様の状況・ご要望をヒアリング。最適なプランと申請ルートをご提案します。</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex items-start gap-8 md:gap-0 fade-in">
+          <div class="relative flex-shrink-0 w-16 md:absolute md:left-1/2 md:-translate-x-1/2">
+            <div class="timeline-dot w-8 h-8 rounded-full flex items-center justify-center text-navy-900 font-bold text-sm z-10 relative">2</div>
+          </div>
+          <div class="md:w-5/12 md:mr-auto md:pr-10 md:text-right card-navy rounded-2xl p-6">
+            <div class="text-gold-500 text-xs tracking-widest uppercase mb-2">Day 3〜7 — 書類準備</div>
+            <h3 class="font-serif text-lg text-white mb-2">書類収集・スクール手配</h3>
+            <p class="text-white/45 text-sm leading-relaxed">必要書類のリストをご共有。Ken's Golf Bangkokへの入学手続きと受講証明書の取得を代行します。</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex items-start gap-8 md:gap-0 fade-in">
+          <div class="relative flex-shrink-0 w-16 md:absolute md:left-1/2 md:-translate-x-1/2">
+            <div class="timeline-dot w-8 h-8 rounded-full flex items-center justify-center text-navy-900 font-bold text-sm z-10 relative">3</div>
+          </div>
+          <div class="md:w-5/12 md:ml-auto md:pl-10 card-navy rounded-2xl p-6">
+            <div class="text-gold-500 text-xs tracking-widest uppercase mb-2">Day 7〜10 — 申請</div>
+            <h3 class="font-serif text-lg text-white mb-2">在タイ大使館・領事館への申請</h3>
+            <p class="text-white/45 text-sm leading-relaxed">弊社専門スタッフが申請書類の最終確認を行い、最も近いタイ大使館・領事館への提出をサポートします。</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex items-start gap-8 md:gap-0 fade-in">
+          <div class="relative flex-shrink-0 w-16 md:absolute md:left-1/2 md:-translate-x-1/2">
+            <div class="timeline-dot w-8 h-8 rounded-full flex items-center justify-center text-navy-900 font-bold text-sm z-10 relative">4</div>
+          </div>
+          <div class="md:w-5/12 md:mr-auto md:pr-10 md:text-right card-navy rounded-2xl p-6">
+            <div class="text-gold-500 text-xs tracking-widest uppercase mb-2">Day 14〜20 — 承認</div>
+            <h3 class="font-serif text-lg text-white mb-2">ビザ発行・受け取り</h3>
+            <p class="text-white/45 text-sm leading-relaxed">早ければ14日前後でビザが発行されます。受け取りのアテンドまでサポート。有効期限・条件の詳しい説明も行います。</p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="flex items-start gap-8 md:gap-0 fade-in">
+          <div class="relative flex-shrink-0 w-16 md:absolute md:left-1/2 md:-translate-x-1/2">
+            <div class="timeline-dot w-8 h-8 rounded-full flex items-center justify-center text-navy-900 font-bold text-sm z-10 relative">5</div>
+          </div>
+          <div class="md:w-5/12 md:ml-auto md:pl-10 card-navy rounded-2xl p-6">
+            <div class="text-gold-500 text-xs tracking-widest uppercase mb-2">入国後 — 現地サポート</div>
+            <h3 class="font-serif text-lg text-white mb-2">バンコク入国・定着サポート</h3>
+            <p class="text-white/45 text-sm leading-relaxed">バンコク到着時の空港出迎え（VIPプラン）から、住居・銀行口座開設・ゴルフレッスン開始まで。タイライフを最高のスタートで。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     9. FAQ
+     ═══════════════════════════════════════════════════════ -->
+<section id="faq" class="py-28" style="background: linear-gradient(180deg, #050d1a 0%, #0a1628 50%, #050d1a 100%);">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <div class="text-center mb-20 fade-in">
+      <p class="section-label mb-3">FAQ</p>
+      <div class="gold-divider mb-6"></div>
+      <h2 class="section-title text-3xl md:text-4xl font-bold text-white">
+        専門家が答える<span class="gold-text">よくある質問</span>
+      </h2>
+    </div>
+
+    <div class="space-y-0 fade-in">
+
+      <div class="faq-item py-1">
+        <button class="faq-btn w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-serif text-base md:text-lg text-white/85">DTVビザが却下された場合はどうなりますか？</span>
+          <i class="fas fa-chevron-down text-gold-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-white/45 text-sm leading-relaxed pb-6">
+            弊社では事前の書類精査と過去事例の分析により、却下リスクを最小化しています。万が一却下となった場合は、原因分析の上、無償で再申請サポートを実施します（プランにより条件が異なります）。過去の弊社サポート案件での最終承認率は<strong class="text-white/70">100%</strong>を維持しています。
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item py-1">
+        <button class="faq-btn w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-serif text-base md:text-lg text-white/85">家族や配偶者も一緒に取得できますか？</span>
+          <i class="fas fa-chevron-down text-gold-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-white/45 text-sm leading-relaxed pb-6">
+            はい、可能です。DTVビザは原則として申請者本人が対象ですが、家族の同伴滞在については別途手続きが必要です。エグゼクティブプラン以上では家族のビザサポートも含まれます。詳細はご相談時にご案内します。
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item py-1">
+        <button class="faq-btn w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-serif text-base md:text-lg text-white/85">ゴルフが全くできなくても申請できますか？</span>
+          <i class="fas fa-chevron-down text-gold-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-white/45 text-sm leading-relaxed pb-6">
+            はい、全くの初心者でも問題ありません。Ken's Golf Bangkokはインドア・屋内施設が充実しており、初心者向けコースも豊富です。ビザ取得の要件として必要な受講証明書の取得まで、弊社が完全にサポートします。ゴルフをご趣味として始める絶好の機会にもなります。
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item py-1">
+        <button class="faq-btn w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-serif text-base md:text-lg text-white/85">タイ滞在中に日本への一時帰国はできますか？</span>
+          <i class="fas fa-chevron-down text-gold-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-white/45 text-sm leading-relaxed pb-6">
+            はい、可能です。DTVビザは5年間有効で、1回の入国で最大180日滞在できます。一度タイを出国後に再入国することで再び180日が付与される仕組みです。日本への一時帰国や他国への旅行も自由に行えます。詳細な入出国戦略についてもコンサルティングを行っています。
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item py-1">
+        <button class="faq-btn w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-serif text-base md:text-lg text-white/85">タイで仕事をすることはできますか？</span>
+          <i class="fas fa-chevron-down text-gold-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-white/45 text-sm leading-relaxed pb-6">
+            DTVビザ自体はタイ国内でのローカル就労（タイの企業・個人への直接的な労働提供）は認めていません。ただし、海外の企業・クライアントへのリモートワーク（ノマドワーク）については適切な形で行うことが可能です。法的リスクについては個別に詳しくご説明します。
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item py-1">
+        <button class="faq-btn w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-serif text-base md:text-lg text-white/85">中国のパスポートでも申請できますか？</span>
+          <i class="fas fa-chevron-down text-gold-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-white/45 text-sm leading-relaxed pb-6">
+            はい、中国籍の方のサポート実績も多数ございます。弊社の取得実績の31%が中国籍のお客様です。中国語対応の専門スタッフが対応し、中国国内の公証書類の準備から申請まで完全サポートします。
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     10. CONTACT / CTA
+     ═══════════════════════════════════════════════════════ -->
+<section id="contact" class="py-28 relative overflow-hidden">
+
+  <!-- Background -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div style="background: radial-gradient(ellipse at 30% 50%, rgba(26,58,107,0.3) 0%, transparent 60%); position: absolute; inset: 0;"></div>
+    <div style="background: radial-gradient(ellipse at 70% 50%, rgba(212,175,55,0.05) 0%, transparent 60%); position: absolute; inset: 0;"></div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 relative z-10">
+
+    <div class="text-center mb-16 fade-in">
+      <p class="section-label mb-3">Contact</p>
+      <div class="gold-divider mb-6"></div>
+      <h2 class="section-title text-3xl md:text-4xl font-bold text-white">
+        まずは、<span class="gold-text">無料相談</span>から。
+      </h2>
+      <p class="text-white/40 text-sm mt-4 max-w-lg mx-auto">
+        コンサルタントが24時間以内にご連絡いたします。<br />秘密厳守・完全無料でご相談いただけます。
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+
+      <!-- Left: Concierge Info -->
+      <div class="fade-in-left">
+        <div class="card-navy rounded-3xl p-8 h-full">
+          <!-- Dummy concierge image placeholder -->
+          <div class="w-full aspect-square max-w-xs mx-auto rounded-2xl overflow-hidden bg-navy-700 border border-gold-500/15 flex items-center justify-center mb-8 relative">
+            <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(26,58,107,0.8), rgba(10,22,40,0.9));"></div>
+            <div class="relative z-10 text-center">
+              <div class="w-24 h-24 rounded-full border-2 border-gold-500/30 bg-navy-600 flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-user-tie text-gold-400 text-4xl"></i>
+              </div>
+              <p class="font-serif text-white text-lg font-semibold mb-1">山田 健太郎</p>
+              <p class="text-gold-500 text-xs tracking-widest uppercase mb-3">Senior DTV Consultant</p>
+              <div class="flex justify-center gap-1">
+                <i class="fas fa-star star-gold text-xs"></i><i class="fas fa-star star-gold text-xs"></i><i class="fas fa-star star-gold text-xs"></i><i class="fas fa-star star-gold text-xs"></i><i class="fas fa-star star-gold text-xs"></i>
+              </div>
+              <p class="text-white/35 text-[10px] mt-2">バンコク駐在 ／ 5年以上の実績</p>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex items-center gap-3 text-sm text-white/50">
+              <i class="fas fa-phone text-gold-500 w-5 text-center"></i>
+              <span>+81 (0)3-XXXX-XXXX</span>
+            </div>
+            <div class="flex items-center gap-3 text-sm text-white/50">
+              <i class="fab fa-line text-gold-500 w-5 text-center"></i>
+              <span>LINE: @dtv-elite-jp</span>
+            </div>
+            <div class="flex items-center gap-3 text-sm text-white/50">
+              <i class="fas fa-envelope text-gold-500 w-5 text-center"></i>
+              <span>info@dtv-elite.com</span>
+            </div>
+            <div class="flex items-center gap-3 text-sm text-white/50">
+              <i class="fas fa-clock text-gold-500 w-5 text-center"></i>
+              <span>平日 9:00〜18:00 JST（バンコクオフィス常駐）</span>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-6 border-t border-white/5">
+            <p class="text-white/30 text-xs leading-relaxed">
+              <i class="fas fa-shield-halved text-gold-500/50 mr-1"></i>
+              ご相談内容は厳格な守秘義務のもとで管理されます。第三者への情報提供は一切行いません。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="fade-in-right">
+        <form class="card-navy rounded-3xl p-8 space-y-5" onsubmit="submitForm(event)">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs text-white/40 tracking-widest uppercase mb-2">お名前 <span class="text-gold-500">*</span></label>
+              <input type="text" placeholder="山田 太郎" class="form-input w-full rounded-xl px-4 py-3 text-sm" required />
+            </div>
+            <div>
+              <label class="block text-xs text-white/40 tracking-widest uppercase mb-2">国籍 <span class="text-gold-500">*</span></label>
+              <select class="form-input w-full rounded-xl px-4 py-3 text-sm" required style="background: rgba(15,32,68,0.6); border: 1px solid rgba(212,175,55,0.2); color: #e8e0d0;">
+                <option value="" style="background: #0a1628;">選択してください</option>
+                <option value="jp" style="background: #0a1628;">🇯🇵 日本</option>
+                <option value="cn" style="background: #0a1628;">🇨🇳 中国</option>
+                <option value="kr" style="background: #0a1628;">🇰🇷 韓国</option>
+                <option value="us" style="background: #0a1628;">🇺🇸 アメリカ</option>
+                <option value="eu" style="background: #0a1628;">🌍 欧州</option>
+                <option value="other" style="background: #0a1628;">その他</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs text-white/40 tracking-widest uppercase mb-2">メールアドレス <span class="text-gold-500">*</span></label>
+            <input type="email" placeholder="your@email.com" class="form-input w-full rounded-xl px-4 py-3 text-sm" required />
+          </div>
+
+          <div>
+            <label class="block text-xs text-white/40 tracking-widest uppercase mb-2">ご希望のプラン</label>
+            <select class="form-input w-full rounded-xl px-4 py-3 text-sm" style="background: rgba(15,32,68,0.6); border: 1px solid rgba(212,175,55,0.2); color: #e8e0d0;">
+              <option value="" style="background: #0a1628;">まだ決まっていない</option>
+              <option value="standard" style="background: #0a1628;">スタンダードプラン</option>
+              <option value="executive" style="background: #0a1628;">エグゼクティブプラン</option>
+              <option value="vip" style="background: #0a1628;">VIPフルサービス</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs text-white/40 tracking-widest uppercase mb-2">ご相談内容・ご質問</label>
+            <textarea rows="4" placeholder="ご状況・ご要望などをお聞かせください..." class="form-input w-full rounded-xl px-4 py-3 text-sm resize-none"></textarea>
+          </div>
+
+          <div>
+            <label class="block text-xs text-white/40 tracking-widest uppercase mb-2">ご希望の連絡方法</label>
+            <div class="flex gap-3">
+              <label class="flex items-center gap-2 text-sm text-white/50 cursor-pointer">
+                <input type="radio" name="contact-method" value="email" checked class="accent-gold-500" /> メール
+              </label>
+              <label class="flex items-center gap-2 text-sm text-white/50 cursor-pointer">
+                <input type="radio" name="contact-method" value="line" class="accent-gold-500" /> LINE
+              </label>
+              <label class="flex items-center gap-2 text-sm text-white/50 cursor-pointer">
+                <input type="radio" name="contact-method" value="zoom" class="accent-gold-500" /> Zoomオンライン面談
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-gold w-full py-4 rounded-xl text-sm tracking-widest font-bold">
+            <span><i class="fas fa-paper-plane mr-2"></i>無料相談を申し込む</span>
+          </button>
+
+          <p class="text-white/20 text-[10px] text-center leading-relaxed">
+            送信することで、プライバシーポリシーおよび利用規約に同意したものとみなされます。
+          </p>
+        </form>
+
+        <!-- Success message (hidden) -->
+        <div id="form-success" class="hidden card-navy rounded-3xl p-12 text-center">
+          <i class="fas fa-check-circle text-gold-400 text-5xl mb-6"></i>
+          <h3 class="font-serif text-2xl text-white mb-3">ありがとうございます</h3>
+          <p class="text-white/45 text-sm leading-relaxed">24時間以内にコンサルタントよりご連絡いたします。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     11. FOOTER
+     ═══════════════════════════════════════════════════════ -->
+<footer class="border-t border-white/5 pt-20 pb-10" style="background: #020b18;">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Top Row -->
+    <div class="grid md:grid-cols-4 gap-10 mb-16">
+
+      <!-- Brand -->
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-9 h-9 rounded-full border border-gold-500/30 flex items-center justify-center">
+            <i class="fas fa-crown text-gold-500 text-sm"></i>
+          </div>
+          <div>
+            <div class="font-serif text-lg font-semibold tracking-widest"><span class="gold-text">DTV</span><span class="text-white"> ELITE</span></div>
+            <div class="text-[9px] text-gold-700 tracking-[0.2em] uppercase">Thailand Premium Residency</div>
+          </div>
+        </div>
+        <p class="text-white/30 text-xs leading-relaxed mb-5">
+          Ken's Golf Bangkokとの独占提携により、タイDTVビザの取得を先駆的に実現するプレミアムコンサルティングファーム。
+        </p>
+        <div class="flex gap-3">
+          <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/30 hover:text-gold-500 hover:border-gold-500/30 transition-colors text-xs">
+            <i class="fab fa-line"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/30 hover:text-gold-500 hover:border-gold-500/30 transition-colors text-xs">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/30 hover:text-gold-500 hover:border-gold-500/30 transition-colors text-xs">
+            <i class="fab fa-weixin"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/30 hover:text-gold-500 hover:border-gold-500/30 transition-colors text-xs">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="text-gold-600 text-xs tracking-[0.2em] uppercase mb-5">サービス</h4>
+        <ul class="space-y-3 text-white/35 text-xs">
+          <li><a href="#plans" class="hover:text-gold-500 transition-colors">DTVビザ取得サポート</a></li>
+          <li><a href="#plans" class="hover:text-gold-500 transition-colors">ゴルフスクール手配</a></li>
+          <li><a href="#plans" class="hover:text-gold-500 transition-colors">現地コンシェルジュ</a></li>
+          <li><a href="#plans" class="hover:text-gold-500 transition-colors">家族同伴サポート</a></li>
+          <li><a href="#plans" class="hover:text-gold-500 transition-colors">バンコク定着支援</a></li>
+        </ul>
+      </div>
+
+      <!-- Info -->
+      <div>
+        <h4 class="text-gold-600 text-xs tracking-[0.2em] uppercase mb-5">情報</h4>
+        <ul class="space-y-3 text-white/35 text-xs">
+          <li><a href="#" class="hover:text-gold-500 transition-colors">DTVビザとは</a></li>
+          <li><a href="#track-record" class="hover:text-gold-500 transition-colors">実績・事例紹介</a></li>
+          <li><a href="#faq" class="hover:text-gold-500 transition-colors">よくある質問</a></li>
+          <li><a href="#" class="hover:text-gold-500 transition-colors">ブログ・コラム</a></li>
+          <li><a href="#contact" class="hover:text-gold-500 transition-colors">お問い合わせ</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal & Language -->
+      <div>
+        <h4 class="text-gold-600 text-xs tracking-[0.2em] uppercase mb-5">法的情報</h4>
+        <ul class="space-y-3 text-white/35 text-xs">
+          <li><a href="#" class="hover:text-gold-500 transition-colors">プライバシーポリシー</a></li>
+          <li><a href="#" class="hover:text-gold-500 transition-colors">利用規約</a></li>
+          <li><a href="#" class="hover:text-gold-500 transition-colors">特定商取引法に基づく表記</a></li>
+          <li><a href="#" class="hover:text-gold-500 transition-colors">免責事項</a></li>
+        </ul>
+        <div class="mt-6">
+          <h4 class="text-gold-600 text-xs tracking-[0.2em] uppercase mb-3">言語 / Language</h4>
+          <div class="flex gap-2 flex-wrap">
+            <button onclick="setLang('jp')" class="lang-btn active text-xs border border-white/10 rounded-full px-3 py-1 hover:border-gold-500/30">日本語</button>
+            <button onclick="setLang('en')" class="lang-btn text-xs border border-white/10 rounded-full px-3 py-1 hover:border-gold-500/30">English</button>
+            <button onclick="setLang('cn')" class="lang-btn text-xs border border-white/10 rounded-full px-3 py-1 hover:border-gold-500/30">中文</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-white/5 pt-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-white/20 text-xs">
+        <p>© 2025 DTV Elite Consulting, Inc. All rights reserved.</p>
+        <p class="text-center">提携: Ken's Golf Bangkok ／ 東京オフィス・バンコクオフィス常駐</p>
+        <p>本サービスは移民法・入国管理法に準拠した合法的なコンサルティングサービスです。</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     JAVASCRIPT
+     ═══════════════════════════════════════════════════════ -->
+<script>
+  /* ── Header scroll ─────────────────────── */
+  const header = document.getElementById('main-header');
+  const floatingCTA = document.getElementById('floating-cta');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+      floatingCTA.classList.add('visible');
+    } else {
+      header.classList.remove('scrolled');
+      floatingCTA.classList.remove('visible');
+    }
+  });
+
+  /* ── Mobile menu ───────────────────────── */
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('open');
+  }
+
+  /* ── Language switcher ─────────────────── */
+  function setLang(lang) {
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      if ((lang === 'jp' && (btn.textContent.includes('JP') || btn.textContent.includes('日本語'))) ||
+          (lang === 'en' && (btn.textContent.includes('EN') || btn.textContent.includes('English'))) ||
+          (lang === 'cn' && (btn.textContent.includes('中文') || btn.textContent.includes('中')))) {
+        btn.classList.add('active');
+      }
+    });
+    // In production, switch language content here
+    const msgs = { jp: '日本語モードに切り替えました', en: 'Switched to English mode', cn: '已切换至中文模式' };
+    // Could show a subtle toast notification
+  }
+
+  /* ── Scroll Animations ─────────────────── */
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => observer.observe(el));
+
+  /* ── Counter Animation ─────────────────── */
+  function animateCounter(el, target, duration = 2000) {
+    let start = 0;
+    const step = Math.ceil(target / (duration / 16));
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= target) { start = target; clearInterval(timer); }
+      el.textContent = start;
+    }, 16);
+  }
+
+  const mainCounter = document.getElementById('mainCounter');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        if (entry.target === mainCounter) {
+          animateCounter(mainCounter, 100, 2500);
+        } else {
+          const target = parseInt(entry.target.dataset.target);
+          animateCounter(entry.target, target, 1800);
+        }
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counterObserver.observe(mainCounter);
+  document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
+
+  /* ── Bar chart animation ───────────────── */
+  const barObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const width = entry.target.dataset.width;
+        entry.target.style.transition = 'width 1.5s ease';
+        entry.target.style.width = '0%';
+        setTimeout(() => { entry.target.style.width = width + '%'; }, 100);
+        barObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.bar-fill').forEach(el => {
+    el.style.width = '0%';
+    barObserver.observe(el);
+  });
+
+  /* ── FAQ Accordion ─────────────────────── */
+  function toggleFaq(btn) {
+    const content = btn.nextElementSibling;
+    const chevron = btn.querySelector('.faq-chevron');
+    const isOpen = content.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('open'));
+    document.querySelectorAll('.faq-chevron').forEach(c => c.classList.remove('open'));
+
+    // Open clicked if it was closed
+    if (!isOpen) {
+      content.classList.add('open');
+      chevron.classList.add('open');
+    }
+  }
+
+  /* ── Form Submit ───────────────────────── */
+  function submitForm(e) {
+    e.preventDefault();
+    const form = e.target;
+    const success = document.getElementById('form-success');
+    form.style.opacity = '0';
+    form.style.transition = 'opacity 0.4s ease';
+    setTimeout(() => {
+      form.style.display = 'none';
+      success.classList.remove('hidden');
+      success.style.opacity = '0';
+      success.style.transition = 'opacity 0.4s ease';
+      setTimeout(() => { success.style.opacity = '1'; }, 50);
+    }, 400);
+  }
+</script>
+
+</body>
+</html>
