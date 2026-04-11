@@ -316,6 +316,56 @@
     /* ─── Flag bar ─────────────────────────────── */
     .flag-bar { display: flex; gap: 8px; align-items: center; }
 
+    /* ─── Globe Language Dropdown ─────────────────── */
+    .lang-dropdown { position: relative; }
+    .lang-dropdown-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50px;
+      padding: 7px 14px;
+      color: rgba(255,255,255,0.75);
+      font-size: 12px; font-weight: 600;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-dropdown-btn:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.3); color: #fff; }
+    .lang-chevron { font-size: 9px; transition: transform 0.2s; }
+    .lang-menu {
+      position: absolute; right: 0; top: calc(100% + 8px);
+      background: rgba(5,26,14,0.97);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      min-width: 180px;
+      z-index: 200;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-6px) scale(0.97);
+      transition: opacity 0.18s, transform 0.18s;
+      pointer-events: none;
+    }
+    .lang-menu.open {
+      opacity: 1; transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+    .lang-menu-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 11px 16px;
+      color: rgba(255,255,255,0.65);
+      font-size: 13px;
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+    }
+    .lang-menu-item:not(:last-child) { border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .lang-menu-item:hover { background: rgba(34,197,94,0.1); color: #fff; }
+    .lang-menu-item.active { color: #4ade80; font-weight: 600; }
+    .lang-menu-item .check { margin-left: auto; color: #4ade80; font-size: 10px; }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
     /* ─── Lang switcher active ──────────────────── */
     .lang-active {
       color: #4ade80 !important;
@@ -359,12 +409,19 @@
 
     <!-- CTA + Lang + Hamburger -->
     <div class="flex items-center gap-3">
-      <!-- Language Switcher -->
-      <div class="hidden md:flex items-center gap-1 text-[10px] text-white/50 font-medium">
-        <a href="../ja/" class="px-2 py-1 rounded border border-white/10 hover:text-white hover:border-white/30 transition-colors">JP</a>
-        <a href="../en/" class="px-2 py-1 rounded border border-white/10 hover:text-white hover:border-white/30 transition-colors">EN</a>
-        <a href="../zh/" class="px-2 py-1 rounded border border-white/10 hover:text-white hover:border-white/30 transition-colors">中文</a>
-        <a href="../ko/" class="px-2 py-1 rounded border border-white/10 lang-active transition-colors">한국어</a>
+      <!-- Globe Language Dropdown -->
+      <div class="lang-dropdown" id="lang-dropdown">
+        <button class="lang-dropdown-btn" onclick="toggleLangMenu()" aria-expanded="false" aria-label="언어 변경">
+          <i class="fas fa-globe"></i>
+          <span>한국어</span>
+          <i class="fas fa-chevron-down lang-chevron"></i>
+        </button>
+        <div class="lang-menu" id="lang-menu">
+          <a href="../ja/" class="lang-menu-item"><span class="lang-flag">🇯🇵</span><span>日本語</span></a>
+          <a href="../en/" class="lang-menu-item"><span class="lang-flag">🇬🇧</span><span>English</span></a>
+          <a href="../zh/" class="lang-menu-item"><span class="lang-flag">🇨🇳</span><span>中文</span></a>
+          <a href="../ko/" class="lang-menu-item active"><span class="lang-flag">🇰🇷</span><span>한국어</span><i class="fas fa-check check"></i></a>
+        </div>
       </div>
       <a href="#contact" class="hidden md:inline-flex btn-white px-5 py-2.5 rounded-full text-sm">
         무료 상담하기
@@ -383,13 +440,7 @@
       <a href="#flow" class="hover:text-white transition-colors py-1" onclick="toggleMobile()">신청 절차</a>
       <a href="#faq" class="hover:text-white transition-colors py-1" onclick="toggleMobile()">FAQ</a>
     </nav>
-    <!-- Mobile Lang Switcher -->
-    <div class="flex items-center gap-2 mb-4 text-xs text-white/50 font-medium">
-      <a href="../ja/" class="px-2 py-1 rounded border border-white/10 hover:text-white transition-colors">JP</a>
-      <a href="../en/" class="px-2 py-1 rounded border border-white/10 hover:text-white transition-colors">EN</a>
-      <a href="../zh/" class="px-2 py-1 rounded border border-white/10 hover:text-white transition-colors">中文</a>
-      <a href="../ko/" class="px-2 py-1 rounded border border-white/10 lang-active transition-colors">한국어</a>
-    </div>
+    <!-- Language dropdown is in the header (works on all screen sizes) -->
     <a href="#contact" class="btn-white block py-3 rounded-full text-sm text-center font-bold" onclick="toggleMobile()">무료 상담하기</a>
   </div>
 </header>
@@ -1492,6 +1543,23 @@
   function toggleMobile() {
     document.getElementById('mobile-menu').classList.toggle('open');
   }
+
+  /* ── Language dropdown ─────────────────── */
+  function toggleLangMenu() {
+    const menu = document.getElementById('lang-menu');
+    const btn = document.querySelector('.lang-dropdown-btn');
+    const isOpen = menu.classList.toggle('open');
+    if (btn) btn.setAttribute('aria-expanded', isOpen);
+  }
+  document.addEventListener('click', function(e) {
+    const dropdown = document.getElementById('lang-dropdown');
+    if (dropdown && !dropdown.contains(e.target)) {
+      const menu = document.getElementById('lang-menu');
+      const btn = document.querySelector('.lang-dropdown-btn');
+      if (menu) menu.classList.remove('open');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    }
+  });
 
   /* ── Scroll animations ────────────────── */
   const anim = new IntersectionObserver((entries) => {
