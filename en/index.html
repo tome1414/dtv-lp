@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golf DTV | Play Golf in Thailand &amp; Get a 5-Year Visa.</title>
+  <meta name="description" content="Golf DTV – Thailand's first golf-based DTV visa agency. Get a 5-year Destination Thailand Visa through Thailand PGA-certified pros. 96% success rate. 100% refund if rejected." />
+  <link rel="canonical" href="https://tome1414.github.io/dtv-lp/en/" />
+  <link rel="alternate" hreflang="ja" href="https://tome1414.github.io/dtv-lp/ja/" />
+  <link rel="alternate" hreflang="en" href="https://tome1414.github.io/dtv-lp/en/" />
+  <link rel="alternate" hreflang="zh" href="https://tome1414.github.io/dtv-lp/zh/" />
+  <link rel="alternate" hreflang="ko" href="https://tome1414.github.io/dtv-lp/ko/" />
+  <link rel="alternate" hreflang="x-default" href="https://tome1414.github.io/dtv-lp/ja/" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              950: '#021008',
+              900: '#051a0e',
+              800: '#0a2e18',
+              700: '#0f4324',
+              600: '#166534',
+              500: '#16a34a',
+              400: '#22c55e',
+              300: '#4ade80',
+            },
+            sage: {
+              900: '#1a2e1e',
+              800: '#243b29',
+              700: '#2d4a34',
+              600: '#3d6147',
+            },
+            cream: '#f5f0e8',
+            parchment: '#ede8dc',
+          },
+          fontFamily: {
+            sans: ['Noto Sans', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+            cormorant: ['Cormorant Garamond', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #f8f5ef;
+      color: #1a2e1e;
+      font-family: 'Noto Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ─── Green gradient text ──────────────────── */
+    .green-text {
+      background: linear-gradient(135deg, #166534 0%, #16a34a 50%, #15803d 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .white-text-grad {
+      background: linear-gradient(135deg, #ffffff 0%, #d4f0dc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ─── Dividers ─────────────────────────────── */
+    .green-divider {
+      width: 60px; height: 2px;
+      background: linear-gradient(90deg, #166534, #22c55e, transparent);
+      margin: 0 auto;
+    }
+
+    /* ─── Buttons ──────────────────────────────── */
+    .btn-primary {
+      background: linear-gradient(135deg, #166534 0%, #15803d 50%, #166534 100%);
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+      position: relative; overflow: hidden;
+    }
+    .btn-primary::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #15803d 0%, #16a34a 50%, #15803d 100%);
+      opacity: 0; transition: opacity 0.3s ease;
+    }
+    .btn-primary:hover::before { opacity: 1; }
+    .btn-primary span { position: relative; z-index: 1; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(22,101,52,0.35); }
+
+    .btn-outline {
+      border: 2px solid #166534;
+      color: #166534;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .btn-outline:hover {
+      background: #166534;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .btn-white {
+      background: #fff;
+      color: #166534;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+    }
+    .btn-white:hover {
+      background: #f0fdf4;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+
+    /* ─── Header ───────────────────────────────── */
+    #main-header { transition: background 0.4s, box-shadow 0.4s; }
+    #main-header.scrolled {
+      background: rgba(255,255,255,0.97) !important;
+      box-shadow: 0 1px 0 rgba(22,101,52,0.1), 0 4px 20px rgba(0,0,0,0.08);
+      backdrop-filter: blur(20px);
+    }
+
+    /* ─── Hero ─────────────────────────────────── */
+    .hero-bg {
+      background: linear-gradient(160deg, #051a0e 0%, #0a2e18 30%, #166534 65%, #0f4324 100%);
+      position: relative; overflow: hidden;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse at 10% 80%, rgba(34,197,94,0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 90% 20%, rgba(22,163,74,0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    /* Grass texture overlay */
+    .hero-bg::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 120px;
+      background: linear-gradient(180deg, transparent 0%, rgba(5,26,14,0.6) 100%);
+      pointer-events: none;
+    }
+
+    /* SVG wave */
+    .wave-divider svg { display: block; }
+
+    /* ─── Fade animations ──────────────────────── */
+    .fade-up { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .fade-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-left.visible { opacity: 1; transform: translateX(0); }
+    .fade-right { opacity: 0; transform: translateX(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-right.visible { opacity: 1; transform: translateX(0); }
+    .fade-scale { opacity: 0; transform: scale(0.92); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-scale.visible { opacity: 1; transform: scale(1); }
+    .d1 { transition-delay: 0.1s; }
+    .d2 { transition-delay: 0.2s; }
+    .d3 { transition-delay: 0.3s; }
+    .d4 { transition-delay: 0.4s; }
+    .d5 { transition-delay: 0.5s; }
+
+    /* ─── Stat card ────────────────────────────── */
+    .stat-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(10px);
+    }
+
+    /* ─── Problem card ─────────────────────────── */
+    .problem-card {
+      background: #fff;
+      border: 1px solid rgba(22,101,52,0.1);
+      transition: all 0.3s ease;
+    }
+    .problem-card:hover {
+      border-color: rgba(22,101,52,0.3);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(22,101,52,0.1);
+    }
+
+    /* ─── Step ─────────────────────────────────── */
+    .step-connector {
+      position: absolute; top: 24px; left: calc(50% + 24px);
+      right: calc(-50% + 24px); height: 2px;
+      background: linear-gradient(90deg, #166534, rgba(22,101,52,0.2));
+    }
+
+    /* ─── Plan card ────────────────────────────── */
+    .plan-card {
+      background: #fff;
+      border: 2px solid transparent;
+      transition: all 0.35s ease;
+      position: relative;
+    }
+    .plan-card:hover {
+      border-color: #166534;
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(22,101,52,0.15);
+    }
+    .plan-card.featured {
+      border-color: #166534;
+      box-shadow: 0 12px 40px rgba(22,101,52,0.15);
+    }
+
+    /* ─── FAQ ──────────────────────────────────── */
+    .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.45s ease; }
+    .faq-content.open { max-height: 400px; }
+    .faq-chevron { transition: transform 0.3s ease; }
+    .faq-chevron.open { transform: rotate(180deg); }
+
+    /* ─── Form ─────────────────────────────────── */
+    .form-field {
+      border: 1.5px solid #d1e7d7;
+      background: #fff;
+      color: #1a2e1e;
+      transition: all 0.3s ease;
+    }
+    .form-field:focus {
+      outline: none;
+      border-color: #166534;
+      box-shadow: 0 0 0 3px rgba(22,101,52,0.1);
+    }
+    .form-field::placeholder { color: #9ca3af; }
+
+    /* ─── Floating CTA ─────────────────────────── */
+    #float-cta { opacity: 0; transform: translateY(20px); transition: all 0.4s ease; pointer-events: none; }
+    #float-cta.show { opacity: 1; transform: translateY(0); pointer-events: all; }
+
+    /* ─── Trust badge ──────────────────────────── */
+    .trust-badge {
+      background: rgba(22,101,52,0.07);
+      border: 1px solid rgba(22,101,52,0.15);
+    }
+
+    /* ─── Counter ──────────────────────────────── */
+    .big-counter {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      background: linear-gradient(135deg, #166534, #22c55e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ─── Testimonial ──────────────────────────── */
+    .testimonial-card {
+      background: #fff;
+      border: 1px solid rgba(22,101,52,0.1);
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem; line-height: 1;
+      color: rgba(22,101,52,0.1);
+      position: absolute; top: 0; left: 16px;
+    }
+
+    /* ─── Scroll indicator ─────────────────────── */
+    @keyframes bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+    .bounce { animation: bounce 1.8s ease-in-out infinite; }
+
+    /* ─── Golf ball roll ───────────────────────── */
+    @keyframes roll { 0% { transform: translateX(-20px) rotate(0deg); opacity: 0; } 20% { opacity: 1; } 100% { transform: translateX(0) rotate(360deg); opacity: 1; } }
+    .golf-roll { animation: roll 1.2s ease forwards; }
+
+    /* ─── Pulse dot ────────────────────────────── */
+    @keyframes pulseDot { 0%,100% { box-shadow: 0 0 0 0 rgba(22,101,52,0.4); } 50% { box-shadow: 0 0 0 10px rgba(22,101,52,0); } }
+    .pulse-dot { animation: pulseDot 2s ease-in-out infinite; }
+
+    /* ─── Number shine ─────────────────────────── */
+    @keyframes numShine {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+    .num-shine {
+      background: linear-gradient(90deg, #0f4324 0%, #22c55e 30%, #166534 50%, #22c55e 70%, #0f4324 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      animation: numShine 3.5s linear infinite;
+    }
+
+    /* ─── Hamburger ─────────────────────────────── */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+
+    /* ─── Green section bg ─────────────────────── */
+    .section-green {
+      background: linear-gradient(160deg, #051a0e 0%, #0a2e18 50%, #0f4324 100%);
+    }
+
+    /* ─── Check icon ───────────────────────────── */
+    .check { color: #166534; }
+
+    /* ─── PGA Badge ────────────────────────────── */
+    .pga-badge {
+      background: linear-gradient(135deg, #0a2e18, #166534);
+      border: 2px solid rgba(34,197,94,0.3);
+    }
+
+    /* ─── Flag bar ─────────────────────────────── */
+    .flag-bar { display: flex; gap: 8px; align-items: center; }
+
+    /* ─── Lang switcher active ─────────────────── */
+    .lang-active {
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ FLOATING CTA ═══ -->
+<div id="float-cta" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 md:hidden">
+  <a href="#contact" class="btn-primary px-8 py-3.5 rounded-full text-sm flex items-center gap-2 shadow-2xl">
+    <span><i class="fas fa-comments mr-1"></i> Free Consultation</span>
+  </a>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     1. HEADER
+     ═══════════════════════════════════════════════ -->
+<header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-transparent">
+  <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center flex-shrink-0">
+        <i class="fas fa-golf-ball-tee text-white text-sm"></i>
+      </div>
+      <div>
+        <div class="text-white font-bold text-base tracking-wide leading-tight">Golf <span style="color:#4ade80;">DTV</span></div>
+        <div class="text-white/50 text-[9px] tracking-widest uppercase">Thailand Visa Agency</div>
+      </div>
+    </a>
+
+    <!-- Nav desktop -->
+    <nav class="hidden lg:flex items-center gap-7 text-sm text-white/70 font-medium">
+      <a href="#about" class="hover:text-white transition-colors">What is DTV?</a>
+      <a href="#plans" class="hover:text-white transition-colors">Plans</a>
+      <a href="#flow" class="hover:text-white transition-colors">How It Works</a>
+      <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+    </nav>
+
+    <!-- CTA + Lang + Hamburger -->
+    <div class="flex items-center gap-3">
+      <!-- Language switcher -->
+      <div class="hidden md:flex items-center gap-1 bg-white/8 border border-white/10 rounded-full px-2 py-1 text-[10px] font-semibold">
+        <a href="../ja/" class="px-2 py-1 rounded-full text-white/50 hover:text-white transition-colors">JP</a>
+        <a href="../en/" class="px-2 py-1 rounded-full lang-active transition-colors">EN</a>
+        <a href="../zh/" class="px-2 py-1 rounded-full text-white/50 hover:text-white transition-colors">中文</a>
+        <a href="../ko/" class="px-2 py-1 rounded-full text-white/50 hover:text-white transition-colors">한국어</a>
+      </div>
+      <a href="#contact" class="hidden md:inline-flex btn-white px-5 py-2.5 rounded-full text-sm">
+        Free Consultation
+      </a>
+      <button id="hamburger" class="lg:hidden text-white/80 hover:text-white transition-colors p-1" onclick="toggleMobile()">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="bg-forest-900/97 backdrop-blur-xl border-t border-white/5 px-5 py-5">
+    <nav class="flex flex-col gap-4 text-white/70 text-sm font-medium mb-5">
+      <a href="#about" class="hover:text-white transition-colors py-1" onclick="toggleMobile()">What is DTV?</a>
+      <a href="#plans" class="hover:text-white transition-colors py-1" onclick="toggleMobile()">Plans</a>
+      <a href="#flow" class="hover:text-white transition-colors py-1" onclick="toggleMobile()">How It Works</a>
+      <a href="#faq" class="hover:text-white transition-colors py-1" onclick="toggleMobile()">FAQ</a>
+    </nav>
+    <!-- Mobile lang switcher -->
+    <div class="flex items-center gap-1 bg-white/8 border border-white/10 rounded-full px-2 py-1 text-[10px] font-semibold mb-4 w-fit">
+      <a href="../ja/" class="px-2 py-1 rounded-full text-white/50 hover:text-white transition-colors">JP</a>
+      <a href="../en/" class="px-2 py-1 rounded-full lang-active transition-colors">EN</a>
+      <a href="../zh/" class="px-2 py-1 rounded-full text-white/50 hover:text-white transition-colors">中文</a>
+      <a href="../ko/" class="px-2 py-1 rounded-full text-white/50 hover:text-white transition-colors">한국어</a>
+    </div>
+    <a href="#contact" class="btn-white block py-3 rounded-full text-sm text-center font-bold" onclick="toggleMobile()">Free Consultation</a>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════
+     2. HERO
+     ═══════════════════════════════════════════════ -->
+<section class="hero-bg min-h-screen flex items-center justify-center pt-20 pb-0 relative">
+
+  <!-- Decorative golf balls floating -->
+  <div class="absolute top-24 right-16 w-6 h-6 rounded-full bg-white/5 border border-white/10 hidden lg:block" style="animation: bounce 3s ease-in-out infinite;"></div>
+  <div class="absolute top-40 right-32 w-3 h-3 rounded-full bg-white/8 border border-white/15 hidden lg:block" style="animation: bounce 2.4s ease-in-out infinite 0.5s;"></div>
+  <div class="absolute bottom-40 left-20 w-5 h-5 rounded-full bg-white/5 border border-white/10 hidden lg:block" style="animation: bounce 2.8s ease-in-out infinite 1s;"></div>
+
+  <div class="max-w-5xl mx-auto px-5 text-center relative z-10 pb-20">
+
+    <!-- Badge -->
+    <div class="fade-up inline-flex items-center gap-2 bg-white/8 border border-white/15 backdrop-blur-sm rounded-full px-5 py-2 text-white/80 text-xs tracking-wider mb-8">
+      <span class="w-2 h-2 rounded-full bg-green-400 pulse-dot"></span>
+      Industry First &middot; Golf DTV Pioneer Agency &middot; Thailand PGA-Certified Pros Only
+    </div>
+
+    <!-- Headline -->
+    <h1 class="fade-up d1 font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
+      Play Golf in Thailand.<br />
+      <span class="white-text-grad italic">Get a 5-Year Visa.</span>
+    </h1>
+
+    <p class="fade-up d2 text-white/60 text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-10">
+      Through our partnership with Thailand PGA-certified pros, we secure your<br class="hidden sm:block" />
+      DTV (Destination Thailand Visa) — the Thai government-approved long-stay visa.<br />
+      Our specialist agents support you from application to approval.
+    </p>
+
+    <!-- CTA -->
+    <div class="fade-up d3 flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+      <a href="#contact" class="btn-white px-10 py-4 rounded-full text-sm font-bold w-full sm:w-auto">
+        <i class="fas fa-comments mr-2"></i> Free Consultation
+      </a>
+      <a href="#plans" class="btn-outline border-white/40 text-white/80 hover:bg-white/10 hover:border-white px-10 py-4 rounded-full text-sm font-semibold w-full sm:w-auto" style="transition: all 0.3s ease;">
+        View Plans <i class="fas fa-arrow-down ml-2 text-xs"></i>
+      </a>
+    </div>
+
+    <!-- Stats -->
+    <div class="fade-up d4 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+      <div class="stat-card rounded-2xl px-4 py-5 text-center">
+        <div class="text-white font-bold text-2xl md:text-3xl font-serif mb-1">96<span class="text-lg">%</span></div>
+        <div class="text-white/45 text-xs">Approval Rate</div>
+      </div>
+      <div class="stat-card rounded-2xl px-4 py-5 text-center">
+        <div class="text-white font-bold text-2xl md:text-3xl font-serif mb-1">5<span class="text-lg">-yr</span></div>
+        <div class="text-white/45 text-xs">Visa Validity</div>
+      </div>
+      <div class="stat-card rounded-2xl px-4 py-5 text-center">
+        <div class="text-white font-bold text-2xl md:text-3xl font-serif mb-1">180<span class="text-sm">d</span></div>
+        <div class="text-white/45 text-xs">Per Stay</div>
+      </div>
+      <div class="stat-card rounded-2xl px-4 py-5 text-center">
+        <div class="text-white font-bold text-2xl md:text-3xl font-serif mb-1">PGA</div>
+        <div class="text-white/45 text-xs">Certified Pros Only</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave -->
+  <div class="wave-divider absolute bottom-0 left-0 right-0">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8f5ef"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     3. PROBLEM
+     ═══════════════════════════════════════════════ -->
+<section class="py-24 bg-parchment" id="problem">
+  <div class="max-w-5xl mx-auto px-5">
+
+    <div class="text-center mb-16 fade-up">
+      <p class="text-forest-600 text-xs tracking-[0.25em] uppercase font-semibold mb-3">Sound Familiar?</p>
+      <div class="green-divider mb-6"></div>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-forest-900 leading-snug">
+        Tired of <span class="green-text">visa runs?</span>
+      </h2>
+      <p class="text-gray-500 text-sm mt-4 max-w-md mx-auto leading-relaxed">
+        You want to enjoy life freely in Thailand, but dealing with visas and repeated border crossings is getting in the way. We can fix that.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="problem-card rounded-2xl p-7 fade-up">
+        <div class="text-3xl mb-4">✈️</div>
+        <h3 class="font-bold text-forest-800 mb-2 text-sm">Visa runs are exhausting</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Leaving the country every 30–90 days wastes time and money. The cycle of back-to-back tourist visas has to stop.</p>
+      </div>
+      <div class="problem-card rounded-2xl p-7 fade-up d1">
+        <div class="text-3xl mb-4">🥊</div>
+        <h3 class="font-bold text-forest-800 mb-2 text-sm">Muay Thai and herbs aren't your thing</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">You know about the DTV Sports &amp; Wellness category, but haven't found an activity that fits your lifestyle — until now.</p>
+      </div>
+      <div class="problem-card rounded-2xl p-7 fade-up d2">
+        <div class="text-3xl mb-4">📋</div>
+        <h3 class="font-bold text-forest-800 mb-2 text-sm">The application process feels overwhelming</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Documents, e-Visa portals, proof of funds… you're not sure where to start or what's actually required.</p>
+      </div>
+    </div>
+
+    <!-- Solution teaser -->
+    <div class="mt-12 text-center fade-up">
+      <div class="inline-flex items-center gap-3 bg-forest-700/8 border border-forest-600/15 rounded-2xl px-8 py-5">
+        <i class="fas fa-golf-ball-tee text-forest-600 text-xl"></i>
+        <p class="text-forest-800 font-semibold text-sm md:text-base">
+          Did you know that golf qualifies as a <span class="text-forest-600">valid DTV visa activity?</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     4. ABOUT — DTV Explained & Why Golf Qualifies
+     ═══════════════════════════════════════════════ -->
+<section id="about" class="py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-5">
+
+    <div class="text-center mb-16 fade-up">
+      <p class="text-forest-600 text-xs tracking-[0.25em] uppercase font-semibold mb-3">Service Overview</p>
+      <div class="green-divider mb-6"></div>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-forest-900">
+        Why Golf Qualifies for a <span class="green-text">DTV Visa</span>
+      </h2>
+    </div>
+
+    <!-- DTV Basics -->
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+      <div class="fade-left">
+        <div class="bg-forest-900 rounded-3xl p-8 text-white relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 rounded-full" style="background: radial-gradient(circle, rgba(34,197,94,0.15) 0%, transparent 70%); transform: translate(30%,-30%);"></div>
+          <p class="text-green-400 text-xs tracking-widest uppercase mb-3 font-semibold">DTV Visa</p>
+          <h3 class="font-serif text-xl font-bold mb-5 leading-snug">Thailand's long-stay visa<br />launched in July 2024</h3>
+          <ul class="space-y-3 text-sm text-white/70">
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-400 mt-0.5 flex-shrink-0"></i>
+              <span>Valid for <strong class="text-white">5 years</strong> · Multiple entry</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-400 mt-0.5 flex-shrink-0"></i>
+              <span>Up to <strong class="text-white">180 days</strong> per stay (+180-day extension available)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-400 mt-0.5 flex-shrink-0"></i>
+              <span>Application fee <strong class="text-white">approx. USD 350</strong></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-400 mt-0.5 flex-shrink-0"></i>
+              <span>Required bank balance <strong class="text-white">500,000 THB</strong> (approx. USD 14,000+)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-400 mt-0.5 flex-shrink-0"></i>
+              <span>Sports, culture &amp; wellness are accepted application categories</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fade-right">
+        <h3 class="font-serif text-2xl font-bold text-forest-900 mb-5 leading-snug">
+          Thailand's Soft Power Policy<br />officially recognises golf
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">
+          The DTV Visa's "Sports category" requires participation in a sport activity recognised by Thailand's Ministry of Sport. Our partner golf school has been inspected and confirmed by the Thai Ministry of Sport as a fully certified facility.
+        </p>
+        <p class="text-gray-600 text-sm leading-relaxed mb-7">
+          We partner exclusively with <strong class="text-forest-700">Thailand PGA-certified teaching pros</strong>. The official acceptance letters they issue fully satisfy Thai government requirements, and our agents handle everything from document preparation to submission.
+        </p>
+
+        <!-- Badges -->
+        <div class="flex flex-wrap gap-3">
+          <div class="trust-badge rounded-xl px-4 py-2.5 flex items-center gap-2 text-xs text-forest-700 font-semibold">
+            <i class="fas fa-award text-forest-500"></i> Thailand PGA-Certified Pros Only
+          </div>
+          <div class="trust-badge rounded-xl px-4 py-2.5 flex items-center gap-2 text-xs text-forest-700 font-semibold">
+            <i class="fas fa-shield-check text-forest-500"></i> Thai Ministry of Sport Approved
+          </div>
+          <div class="trust-badge rounded-xl px-4 py-2.5 flex items-center gap-2 text-xs text-forest-700 font-semibold">
+            <i class="fas fa-train text-forest-500"></i> BTS Sukhumvit Line Direct Access
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 Steps -->
+    <div id="flow-preview" class="fade-up">
+      <h3 class="text-center font-serif text-2xl font-bold text-forest-900 mb-10">
+        How It Works <span class="text-base font-normal text-gray-400">— 4 Simple Steps</span>
+      </h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="text-center fade-scale">
+          <div class="w-14 h-14 rounded-full bg-forest-700 text-white flex items-center justify-center text-lg font-bold mx-auto mb-4 relative pulse-dot">1</div>
+          <h4 class="font-bold text-forest-800 text-sm mb-2">Choose a Plan &amp; Sign Up</h4>
+          <p class="text-gray-500 text-xs leading-relaxed">Select your preferred plan and submit the enquiry form.</p>
+        </div>
+        <div class="text-center fade-scale d1">
+          <div class="w-14 h-14 rounded-full bg-forest-700 text-white flex items-center justify-center text-lg font-bold mx-auto mb-4">2</div>
+          <h4 class="font-bold text-forest-800 text-sm mb-2">Document Support</h4>
+          <p class="text-gray-500 text-xs leading-relaxed">Acceptance letter issued. We provide a full document checklist.</p>
+        </div>
+        <div class="text-center fade-scale d2">
+          <div class="w-14 h-14 rounded-full bg-forest-700 text-white flex items-center justify-center text-lg font-bold mx-auto mb-4">3</div>
+          <h4 class="font-bold text-forest-800 text-sm mb-2">e-Visa Application</h4>
+          <p class="text-gray-500 text-xs leading-relaxed">Apply online via thaievisa.go.th. Agency filing also available.</p>
+        </div>
+        <div class="text-center fade-scale d3">
+          <div class="w-14 h-14 rounded-full bg-forest-700 text-white flex items-center justify-center text-lg font-bold mx-auto mb-4">4</div>
+          <h4 class="font-bold text-forest-800 text-sm mb-2">Visa Approved · Enter Thailand</h4>
+          <p class="text-gray-500 text-xs leading-relaxed">Visa issued in as little as 2 weeks. Start golfing in Bangkok!</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     5. PLANS
+     ═══════════════════════════════════════════════ -->
+<section id="plans" class="py-24 bg-parchment">
+  <div class="max-w-5xl mx-auto px-5">
+
+    <div class="text-center mb-16 fade-up">
+      <p class="text-forest-600 text-xs tracking-[0.25em] uppercase font-semibold mb-3">Premium Plans</p>
+      <div class="green-divider mb-6"></div>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-forest-900">
+        Choose from <span class="green-text">3 Plans</span>
+      </h2>
+      <p class="text-gray-500 text-sm mt-4 max-w-lg mx-auto leading-relaxed">Select your golf school plan and let us know your preference via the enquiry form below.<br />Payment details will be shared separately after your consultation.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-7 items-start">
+
+      <!-- Silver -->
+      <div class="plan-card rounded-3xl overflow-hidden fade-up shadow-lg">
+        <div class="bg-gray-100 px-7 py-6 border-b border-gray-200">
+          <p class="text-gray-400 text-xs tracking-widest uppercase font-bold mb-2">Silver</p>
+          <div class="flex items-end gap-2">
+            <span class="text-4xl font-serif font-bold text-forest-800">20,000</span>
+            <span class="text-gray-500 text-sm mb-1">THB <span class="text-xs">/ yr</span></span>
+          </div>
+          <p class="text-gray-400 text-xs mt-1">approx. USD 560+</p>
+        </div>
+        <div class="px-7 py-7">
+          <ul class="space-y-3.5 text-sm text-gray-600 mb-8">
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> Official DTV acceptance letter issued</li>
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> Indoor golf facility access 1×/month (12×/yr)</li>
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> Video curriculum access 1×/month (12×/yr)</li>
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> Total: 24 sessions per year</li>
+            <li class="flex items-start gap-3 text-gray-300"><i class="fas fa-times mt-0.5 flex-shrink-0"></i> Group lessons</li>
+            <li class="flex items-start gap-3 text-gray-300"><i class="fas fa-times mt-0.5 flex-shrink-0"></i> Unlimited range · Priority booking</li>
+          </ul>
+          <a href="#contact" class="btn-outline py-3 rounded-xl text-sm font-bold block text-center">Enquire About This Plan</a>
+        </div>
+      </div>
+
+      <!-- Gold (Featured) -->
+      <div class="plan-card featured rounded-3xl overflow-hidden fade-up d1 shadow-xl relative">
+        <!-- Popular badge -->
+        <div class="absolute -top-0 left-0 right-0 flex justify-center -translate-y-1/2 z-10">
+          <span class="bg-forest-600 text-white text-[10px] font-bold tracking-[0.15em] px-5 py-1.5 rounded-full uppercase shadow-lg">Most Popular</span>
+        </div>
+        <div class="pt-6 bg-forest-800 px-7 py-6 border-b border-forest-700">
+          <p class="text-green-300 text-xs tracking-widest uppercase font-bold mb-2">Gold</p>
+          <div class="flex items-end gap-2">
+            <span class="text-4xl font-serif font-bold text-white">50,000</span>
+            <span class="text-white/60 text-sm mb-1">THB <span class="text-xs">/ yr</span></span>
+          </div>
+          <p class="text-white/40 text-xs mt-1">approx. USD 1,400+</p>
+        </div>
+        <div class="bg-white px-7 py-7">
+          <ul class="space-y-3.5 text-sm text-gray-600 mb-8">
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> Official DTV acceptance letter issued</li>
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> <strong class="text-forest-800">12 semi-private lessons per year</strong></li>
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> <strong class="text-forest-800">Unlimited range at partner indoor facility</strong></li>
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> Priority booking</li>
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> Total: 24 sessions per year</li>
+            <li class="flex items-start gap-3 text-gray-300"><i class="fas fa-times mt-0.5 flex-shrink-0"></i> One-on-one private lessons</li>
+          </ul>
+          <a href="#contact" class="btn-primary py-3 rounded-xl text-sm font-bold block text-center">
+            <span>Enquire About This Plan</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Platinum -->
+      <div class="plan-card rounded-3xl overflow-hidden fade-up d2 shadow-lg">
+        <div class="bg-amber-950 px-7 py-6 border-b border-amber-900">
+          <p class="text-amber-300 text-xs tracking-widest uppercase font-bold mb-2">Platinum</p>
+          <div class="flex items-end gap-2">
+            <span class="text-4xl font-serif font-bold text-white">80,000</span>
+            <span class="text-white/60 text-sm mb-1">THB <span class="text-xs">/ yr</span></span>
+          </div>
+          <p class="text-white/40 text-xs mt-1">approx. USD 2,250+</p>
+        </div>
+        <div class="px-7 py-7">
+          <ul class="space-y-3.5 text-sm text-gray-600 mb-8">
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> Official DTV acceptance letter issued</li>
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> <strong class="text-forest-800">24 private one-on-one lessons per year</strong></li>
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> <strong class="text-forest-800">Swing analysis (2× per year)</strong> by Ken Pro</li>
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> Unlimited range · Top-priority booking</li>
+            <li class="flex items-start gap-3"><i class="fas fa-check check mt-0.5 flex-shrink-0"></i> Total: 24 sessions per year</li>
+          </ul>
+          <a href="#contact" class="btn-outline border-amber-800 text-amber-900 hover:bg-amber-800 hover:text-white py-3 rounded-xl text-sm font-bold block text-center" style="transition: all 0.3s;">Enquire About This Plan</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Option: Application Agency Add-on -->
+    <div class="mt-10 fade-up">
+      <!-- Label -->
+      <div class="flex items-center gap-4 mb-5">
+        <div class="flex-1 h-px bg-gray-200"></div>
+        <span class="text-gray-400 text-xs tracking-widest uppercase font-semibold px-2">Optional Add-on</span>
+        <div class="flex-1 h-px bg-gray-200"></div>
+      </div>
+
+      <div class="relative rounded-3xl overflow-hidden shadow-xl border-2 border-forest-600/40" style="background: linear-gradient(135deg, #0a2e18 0%, #166534 50%, #0f4324 100%);">
+        <div class="absolute top-0 left-0 right-0 h-0.5" style="background: linear-gradient(90deg, transparent, #4ade80, transparent);"></div>
+
+        <!-- Option badge -->
+        <div class="absolute top-5 right-5 flex items-center gap-2">
+          <span class="bg-green-400 text-forest-900 text-[10px] font-black tracking-[0.1em] px-3 py-1.5 rounded-full uppercase shadow-lg flex items-center gap-1.5">
+            <i class="fas fa-plus text-xs"></i> Add-on Option
+          </span>
+        </div>
+
+        <div class="p-8 md:p-10">
+          <div class="flex flex-col md:flex-row md:items-start gap-8">
+
+            <!-- Left -->
+            <div class="flex-shrink-0 md:w-56">
+              <p class="text-green-300 text-xs tracking-[0.2em] uppercase font-bold mb-2">+ Add-on Option</p>
+              <h3 class="font-serif text-2xl font-bold text-white mb-3 leading-snug">DTV<br />Application Service</h3>
+              <div class="inline-flex items-baseline gap-1.5 bg-white/8 border border-white/15 rounded-2xl px-4 py-3 mb-4">
+                <span class="text-3xl font-serif font-bold text-white">+10,000</span>
+                <span class="text-white/60 text-sm">THB</span>
+              </div>
+              <p class="text-white/40 text-xs mb-1">approx. +USD 280+</p>
+              <p class="text-green-300/70 text-xs">Can be added to any of the 3 plans above</p>
+            </div>
+
+            <!-- Divider -->
+            <div class="hidden md:block w-px self-stretch" style="background: linear-gradient(180deg, transparent, rgba(255,255,255,0.12), transparent);"></div>
+
+            <!-- Right: Features -->
+            <div class="flex-1">
+              <p class="text-white/60 text-sm mb-5 leading-relaxed">Just provide the required documents — we handle everything else. From document preparation to submission and embassy liaison, we do it all.</p>
+              <div class="grid sm:grid-cols-2 gap-4 mb-6">
+                <div class="flex items-start gap-3">
+                  <div class="w-7 h-7 rounded-lg bg-green-400/15 border border-green-400/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <i class="fas fa-file-check text-green-300 text-xs"></i>
+                  </div>
+                  <div>
+                    <p class="text-white text-xs font-semibold mb-0.5">Full document preparation &amp; filing</p>
+                    <p class="text-white/45 text-xs leading-relaxed">We format your documents to our proven standards and submit to thaievisa.go.th on your behalf.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div class="w-7 h-7 rounded-lg bg-green-400/15 border border-green-400/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <i class="fas fa-phone-volume text-green-300 text-xs"></i>
+                  </div>
+                  <div>
+                    <p class="text-white text-xs font-semibold mb-0.5">Embassy &amp; consulate liaison</p>
+                    <p class="text-white/45 text-xs leading-relaxed">We handle any additional document requests from the embassy during the review process.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div class="w-7 h-7 rounded-lg bg-green-400/15 border border-green-400/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <i class="fas fa-rotate-left text-green-300 text-xs"></i>
+                  </div>
+                  <div>
+                    <p class="text-white text-xs font-semibold mb-0.5"><span class="text-green-300 font-bold">100% refund guarantee</span> if rejected</p>
+                    <p class="text-white/45 text-xs leading-relaxed">In the unlikely event of rejection, we refund our agency fee in full. Apply with complete confidence.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div class="w-7 h-7 rounded-lg bg-green-400/15 border border-green-400/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <i class="fas fa-comments-dollar text-green-300 text-xs"></i>
+                  </div>
+                  <div>
+                    <p class="text-white text-xs font-semibold mb-0.5">Bank balance concerns? Let's talk</p>
+                    <p class="text-white/45 text-xs leading-relaxed">If meeting the 500,000 THB balance requirement is a challenge, contact us first — we may be able to help.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 96% bar -->
+              <div class="p-4 rounded-2xl" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-white/50 text-xs font-semibold uppercase tracking-wider">Agency Application Success Rate</span>
+                  <span class="text-green-300 font-bold text-xl">96<span class="text-base">%</span></span>
+                </div>
+                <div class="h-2 rounded-full overflow-hidden" style="background: rgba(255,255,255,0.08);">
+                  <div class="h-full rounded-full success-bar" style="width: 0%; background: linear-gradient(90deg, #16a34a, #4ade80); transition: width 1.5s ease;" data-width="96"></div>
+                </div>
+                <p class="text-white/25 text-[10px] mt-2">* Based on our agency's filed cases. Results may vary depending on document completeness.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flow hint -->
+    <div class="mt-8 flex items-start gap-3 bg-white rounded-2xl p-5 border border-forest-600/10 fade-up">
+      <i class="fas fa-circle-info text-forest-500 text-lg mt-0.5 flex-shrink-0"></i>
+      <p class="text-gray-500 text-sm leading-relaxed">
+        After reviewing the plans, use the enquiry form below to tell us your preferred plan and whether you'd like the application add-on.
+        A member of our team will follow up with full details and a payment link.
+        <strong class="text-forest-700">No payment is collected on this page.</strong>
+      </p>
+    </div>
+
+    <p class="text-center text-gray-400 text-xs mt-5">
+      <i class="fas fa-info-circle mr-1"></i>
+      Prices shown are annual golf school fees in THB. USD equivalents are approximate and subject to exchange rate fluctuations.
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     6. TRUST — Credentials & Ken's Profile
+     ═══════════════════════════════════════════════ -->
+<section id="trust" class="section-green py-24 relative overflow-hidden">
+  <!-- Top wave -->
+  <div class="absolute top-0 left-0 right-0">
+    <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" style="display:block;">
+      <path d="M0,0 C360,60 1080,0 1440,30 L1440,0 Z" fill="#f5f0e8"/>
+    </svg>
+  </div>
+
+  <div class="max-w-5xl mx-auto px-5 pt-10 relative z-10">
+
+    <div class="text-center mb-16 fade-up">
+      <p class="text-green-400 text-xs tracking-[0.25em] uppercase font-semibold mb-3">Trust &amp; Credentials</p>
+      <div class="w-12 h-px bg-green-400 mx-auto mb-6"></div>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-white">
+        Why Clients <span style="background: linear-gradient(135deg,#22c55e,#4ade80); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">Choose Us</span>
+      </h2>
+    </div>
+
+    <!-- Trust Pillars -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mb-16 fade-up">
+      <div class="text-center p-6 rounded-2xl" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+        <div class="text-4xl mb-3">🏌️</div>
+        <p class="text-green-300 font-bold text-sm mb-1">Industry First</p>
+        <p class="text-white/50 text-xs leading-relaxed">The pioneer agency that first opened the Golf DTV route</p>
+      </div>
+      <div class="text-center p-6 rounded-2xl" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+        <div class="text-4xl mb-3">🏆</div>
+        <p class="text-green-300 font-bold text-sm mb-1">Thailand PGA<br />Certified Pros Only</p>
+        <p class="text-white/50 text-xs leading-relaxed">Exclusively partnered with pros certified by the Thai government</p>
+      </div>
+      <div class="text-center p-6 rounded-2xl" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+        <div class="text-4xl mb-3">🛡️</div>
+        <p class="text-green-300 font-bold text-sm mb-1">96% Approval Rate</p>
+        <p class="text-white/50 text-xs leading-relaxed">Confident enough in our quality to offer a 100% refund on rejection</p>
+      </div>
+      <div class="text-center p-6 rounded-2xl" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+        <div class="text-4xl mb-3">🌏</div>
+        <p class="text-green-300 font-bold text-sm mb-1">6 Languages</p>
+        <p class="text-white/50 text-xs leading-relaxed">Global team supporting clients in Japanese, English, Chinese, Korean, Thai &amp; Russian</p>
+      </div>
+    </div>
+
+    <!-- Partner Pro Profile + Features -->
+    <div class="grid md:grid-cols-2 gap-10 items-center mb-16">
+      <div class="fade-left">
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-8">
+          <div class="text-green-400 text-xs tracking-widest uppercase font-bold mb-4">Partner Pro Profile (example)</div>
+          <div class="flex items-start gap-5 mb-6">
+            <div class="w-20 h-20 rounded-full bg-forest-700 border-2 border-green-400/30 flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-user-tie text-green-300 text-2xl"></i>
+            </div>
+            <div>
+              <div class="text-white/40 text-xs tracking-widest uppercase mb-1">Teaching Pro</div>
+              <h3 class="text-white font-serif text-xl font-bold mb-1">Ken Sugiyama</h3>
+              <div class="pga-badge inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs text-green-300 font-semibold">
+                <i class="fas fa-award text-xs"></i> Thailand PGA Certified FM 0075
+              </div>
+            </div>
+          </div>
+          <p class="text-white/55 text-sm leading-relaxed mb-5">
+            Bangkok-based for over 20 years. As a Thailand PGA-certified teaching pro, he has coached hundreds of students. His facility has been inspected and confirmed by the Thai Ministry of Sport and is our founding partner pro.
+          </p>
+          <!-- Location highlight -->
+          <div class="p-4 rounded-xl" style="background: rgba(34,197,94,0.08); border: 1px solid rgba(34,197,94,0.15);">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-train text-green-400 text-sm mt-0.5 flex-shrink-0"></i>
+              <div>
+                <p class="text-white text-sm font-semibold mb-1">Convenient BTS Sukhumvit Line Access</p>
+                <p class="text-white/50 text-xs leading-relaxed">Sukhumvit Soi 53 (steps from Thong Lo BTS station). One BTS ride from central Bangkok. Air-conditioned indoor facility — comfortable lessons year-round.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-right space-y-5">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-green-400/10 border border-green-400/20 flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-user-shield text-green-400 text-sm"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold text-sm mb-1">We are your agent — your representative</h4>
+            <p class="text-white/45 text-xs leading-relaxed">From enrolling in the golf school to submitting documents to the embassy, our agents handle everything end-to-end. You just provide the documents.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-green-400/10 border border-green-400/20 flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-award text-green-400 text-sm"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold text-sm mb-1">Thailand PGA-certified pros only</h4>
+            <p class="text-white/45 text-xs leading-relaxed">We only partner with Thailand PGA-certified teaching pros recognised by the Thai government. Our network of carefully vetted partners continues to grow.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-green-400/10 border border-green-400/20 flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-language text-green-400 text-sm"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold text-sm mb-1">Global support in 6 languages</h4>
+            <p class="text-white/45 text-xs leading-relaxed">
+              Japanese · English · 中文 · 한국어 · ภาษาไทย · Русский. We support clients from any country in their native language via email, LINE, and online meetings.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-green-400/10 border border-green-400/20 flex items-center justify-center flex-shrink-0">
+            <i class="fas fa-flag text-green-400 text-sm"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold text-sm mb-1">The Golf DTV pioneer — leading the industry</h4>
+            <p class="text-white/45 text-xs leading-relaxed">We were the first agency to establish the golf-based DTV route. Our expertise and track record are unmatched.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <!-- Japan -->
+      <div class="testimonial-card rounded-2xl p-6 shadow-lg fade-up">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-lg">🇯🇵</span>
+          <div class="flex gap-0.5">
+            <i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5 relative z-10">"I used to leave the country six times a year for visa runs. Since getting the DTV I've been able to settle in Bangkok — and my golf game has improved too. Two birds, one stone."</p>
+        <div>
+          <div class="font-bold text-forest-800 text-sm">Yuichi Tanaka</div>
+          <div class="text-gray-400 text-xs">Japan · Freelance Engineer · Age 45</div>
+        </div>
+      </div>
+      <!-- China -->
+      <div class="testimonial-card rounded-2xl p-6 shadow-lg fade-up d1">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-lg">🇨🇳</span>
+          <div class="flex gap-0.5">
+            <i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5 relative z-10">"The agency support was incredibly thorough and the Chinese-language communication was seamless. Handing off the documents and paperwork was a huge relief."</p>
+        <div>
+          <div class="font-bold text-forest-800 text-sm">Wang Jianguo</div>
+          <div class="text-gray-400 text-xs">China · Investor · Age 52</div>
+        </div>
+      </div>
+      <!-- Korea — kept in Korean per instructions -->
+      <div class="testimonial-card rounded-2xl p-6 shadow-lg fade-up d2">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-lg">🇰🇷</span>
+          <div class="flex gap-0.5">
+            <i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5 relative z-10">"골프를 좋아해서 어차피 방콕에 자주 왔는데, DTV로 장기 체류까지 해결됐어요. 에이전트의 서류 대행이 정말 편했습니다."</p>
+        <div>
+          <div class="font-bold text-forest-800 text-sm">김 민준</div>
+          <div class="text-gray-400 text-xs">Korea · IT Entrepreneur · Age 38</div>
+        </div>
+      </div>
+      <!-- English -->
+      <div class="testimonial-card rounded-2xl p-6 shadow-lg fade-up d3">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-lg">🇦🇺</span>
+          <div class="flex gap-0.5">
+            <i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i><i class="fas fa-star text-amber-400 text-xs"></i>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5 relative z-10">"Smooth process from start to finish. The team handled all the paperwork and the golf school setup was excellent. Approved in under 3 weeks!"</p>
+        <div>
+          <div class="font-bold text-forest-800 text-sm">James T.</div>
+          <div class="text-gray-400 text-xs">Australia · Remote Worker · Age 41</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom wave -->
+  <div class="absolute bottom-0 left-0 right-0">
+    <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" style="display:block;">
+      <path d="M0,30 C360,0 1080,60 1440,20 L1440,60 L0,60 Z" fill="#f5f0e8"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     7. FLOW — Detailed Steps
+     ═══════════════════════════════════════════════ -->
+<section id="flow" class="py-24 bg-parchment">
+  <div class="max-w-4xl mx-auto px-5">
+
+    <div class="text-center mb-16 fade-up">
+      <p class="text-forest-600 text-xs tracking-[0.25em] uppercase font-semibold mb-3">Application Flow</p>
+      <div class="green-divider mb-6"></div>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-forest-900">
+        From Sign-Up to Approval —<br /><span class="green-text">Step by Step</span>
+      </h2>
+    </div>
+
+    <div class="space-y-6">
+      <!-- Step 1 -->
+      <div class="fade-up flex gap-6 items-start">
+        <div class="flex flex-col items-center flex-shrink-0">
+          <div class="w-12 h-12 rounded-full bg-forest-700 text-white flex items-center justify-center font-bold text-lg pulse-dot">1</div>
+          <div class="w-0.5 h-12 bg-gradient-to-b from-forest-600 to-transparent mt-1"></div>
+        </div>
+        <div class="bg-white rounded-2xl p-6 flex-1 shadow-sm border border-forest-600/8 hover:border-forest-600/20 transition-colors">
+          <div class="text-forest-600 text-xs tracking-widest uppercase font-bold mb-1">STEP 01</div>
+          <h3 class="font-bold text-forest-800 text-base mb-2">Choose a Plan &amp; Enquire</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Select Silver, Gold, or Platinum and send us an enquiry. A team member will follow up with full details and next steps.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="fade-up d1 flex gap-6 items-start">
+        <div class="flex flex-col items-center flex-shrink-0">
+          <div class="w-12 h-12 rounded-full bg-forest-700 text-white flex items-center justify-center font-bold text-lg">2</div>
+          <div class="w-0.5 h-12 bg-gradient-to-b from-forest-600 to-transparent mt-1"></div>
+        </div>
+        <div class="bg-white rounded-2xl p-6 flex-1 shadow-sm border border-forest-600/8 hover:border-forest-600/20 transition-colors">
+          <div class="text-forest-600 text-xs tracking-widest uppercase font-bold mb-1">STEP 02</div>
+          <h3 class="font-bold text-forest-800 text-base mb-2">Document Support</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">The partner golf school issues the <strong class="text-forest-700">official DTV acceptance letter</strong>. Our agents review every required document (passport, bank statement, photo ID, etc.) to ensure a flawless submission.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="fade-up d2 flex gap-6 items-start">
+        <div class="flex flex-col items-center flex-shrink-0">
+          <div class="w-12 h-12 rounded-full bg-forest-700 text-white flex items-center justify-center font-bold text-lg">3</div>
+          <div class="w-0.5 h-12 bg-gradient-to-b from-forest-600 to-transparent mt-1"></div>
+        </div>
+        <div class="bg-white rounded-2xl p-6 flex-1 shadow-sm border border-forest-600/8 hover:border-forest-600/20 transition-colors">
+          <div class="text-forest-600 text-xs tracking-widest uppercase font-bold mb-1">STEP 03</div>
+          <h3 class="font-bold text-forest-800 text-base mb-2">e-Visa Application (thaievisa.go.th)</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Apply online via the official Thai government portal. Application fee approx. USD 350. Agency filing also available. Review typically takes 2–4 weeks.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="fade-up d3 flex gap-6 items-start">
+        <div class="flex flex-col items-center flex-shrink-0">
+          <div class="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center font-bold text-lg shadow-lg" style="box-shadow: 0 0 0 6px rgba(34,197,94,0.2);">
+            <i class="fas fa-check text-base"></i>
+          </div>
+        </div>
+        <div class="bg-forest-800 rounded-2xl p-6 flex-1 shadow-lg">
+          <div class="text-green-400 text-xs tracking-widest uppercase font-bold mb-1">STEP 04 — COMPLETE</div>
+          <h3 class="font-bold text-white text-base mb-2">Visa Approved · Enter Thailand</h3>
+          <p class="text-white/60 text-sm leading-relaxed">Once your visa is issued, fly to Thailand and start your golf lessons at Ken's Golf Bangkok. Enjoy 5 years of unlimited multi-entry access to the Thai lifestyle!</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     8. FAQ
+     ═══════════════════════════════════════════════ -->
+<section id="faq" class="py-24 bg-white">
+  <div class="max-w-3xl mx-auto px-5">
+
+    <div class="text-center mb-16 fade-up">
+      <p class="text-forest-600 text-xs tracking-[0.25em] uppercase font-semibold mb-3">FAQ</p>
+      <div class="green-divider mb-6"></div>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-forest-900">
+        Frequently Asked <span class="green-text">Questions</span>
+      </h2>
+    </div>
+
+    <div class="divide-y divide-gray-100 fade-up">
+
+      <div class="py-1">
+        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-semibold text-forest-800 text-sm md:text-base">Do I actually need to play golf to apply for the DTV?</span>
+          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-gray-500 text-sm leading-relaxed pb-5">Yes. Under the DTV Sports category, participation in a Thai government-recognised sport is required. Joining Ken's Golf Bangkok satisfies that requirement. No prior golf experience is necessary — beginner programmes are available.</p>
+        </div>
+      </div>
+
+      <div class="py-1">
+        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-semibold text-forest-800 text-sm md:text-base">How do I prove the 500,000 THB bank balance?</span>
+          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-gray-500 text-sm leading-relaxed pb-5">A bank statement in English showing a balance of 500,000 THB (approx. USD 14,000 at current rates) is the standard requirement. Securities accounts and real estate are generally not accepted. We'll walk you through the specifics during your consultation.</p>
+        </div>
+      </div>
+
+      <div class="py-1">
+        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-semibold text-forest-800 text-sm md:text-base">Where do I apply? Can I apply from my home country?</span>
+          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-gray-500 text-sm leading-relaxed pb-5">Yes — you can apply entirely online through the official Thai government e-Visa portal (thaievisa.go.th) without visiting any Thai embassy or consulate. We also offer a full application filing service if you prefer to hand it off to us.</p>
+        </div>
+      </div>
+
+      <div class="py-1">
+        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-semibold text-forest-800 text-sm md:text-base">Do I need to attend golf school every month?</span>
+          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-gray-500 text-sm leading-relaxed pb-5">There is no strict monthly attendance requirement for the DTV application itself. However, we recommend using the sessions included in your plan throughout the year. Proof of activity may be requested at the time of visa renewal.</p>
+        </div>
+      </div>
+
+      <div class="py-1">
+        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-semibold text-forest-800 text-sm md:text-base">Can I work remotely in Thailand on a DTV?</span>
+          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-gray-500 text-sm leading-relaxed pb-5">The DTV does not permit employment with Thai companies. However, remote work for overseas employers or clients currently sits in a legal grey area and is widely used by digital nomads. We can explain the legal nuances and any associated risks during your consultation.</p>
+        </div>
+      </div>
+
+      <div class="py-1">
+        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-semibold text-forest-800 text-sm md:text-base">How much does the application agency service cost?</span>
+          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-gray-500 text-sm leading-relaxed pb-5">Agency fees are separate from the golf plan costs and vary depending on your situation (document readiness, nationality, country of application, etc.). We provide a detailed quote during your free consultation.</p>
+        </div>
+      </div>
+
+      <div class="py-1">
+        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
+          <span class="font-semibold text-forest-800 text-sm md:text-base">What if my visa application is rejected?</span>
+          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p class="text-gray-500 text-sm leading-relaxed pb-5">Rejections can occur if documents are incomplete or the balance requirement isn't met. We thoroughly review all documents before submission to minimise that risk. If you use our application service and your application is still rejected, we refund our agency fee <strong class="text-forest-700">100%</strong>.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     9. CONTACT
+     ═══════════════════════════════════════════════ -->
+<section id="contact" class="py-24 bg-parchment">
+  <div class="max-w-4xl mx-auto px-5">
+
+    <div class="text-center mb-12 fade-up">
+      <p class="text-forest-600 text-xs tracking-[0.25em] uppercase font-semibold mb-3">Contact</p>
+      <div class="green-divider mb-6"></div>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-forest-900">
+        Start with a <span class="green-text">Free Consultation</span>
+      </h2>
+      <p class="text-gray-500 text-sm mt-4 max-w-md mx-auto leading-relaxed">
+        Ask us anything about the visa process and costs — in your language.<br />
+        We reply within 24 hours. Completely free. Strictly confidential.
+      </p>
+    </div>
+
+    <!-- Form (full width) -->
+    <div class="fade-up">
+        <form class="bg-white rounded-3xl p-8 shadow-lg border border-forest-600/8 space-y-6" onsubmit="handleSubmit(event)">
+
+          <!-- Step label -->
+          <div class="flex items-center gap-3 pb-1 border-b border-gray-100">
+            <div class="w-6 h-6 rounded-full bg-forest-600 text-white text-xs flex items-center justify-center font-bold flex-shrink-0">1</div>
+            <p class="text-forest-700 text-xs font-semibold tracking-wider uppercase">Basic Information</p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Full Name <span class="text-red-400">*</span></label>
+              <input type="text" placeholder="John Smith" class="form-field w-full rounded-xl px-4 py-3 text-sm" required />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Nationality <span class="text-red-400">*</span></label>
+              <select class="form-field w-full rounded-xl px-4 py-3 text-sm" required>
+                <option value="">Select…</option>
+                <option value="jp">🇯🇵 Japanese</option>
+                <option value="cn">🇨🇳 Chinese</option>
+                <option value="kr">🇰🇷 Korean</option>
+                <option value="th">🇹🇭 Thai</option>
+                <option value="en">🇬🇧 English-speaking</option>
+                <option value="ru">🇷🇺 Russian</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Email Address <span class="text-red-400">*</span></label>
+            <input type="email" placeholder="your@email.com" class="form-field w-full rounded-xl px-4 py-3 text-sm" required />
+          </div>
+
+          <!-- Step 2: Plan -->
+          <div class="flex items-center gap-3 pb-1 border-b border-gray-100 pt-2">
+            <div class="w-6 h-6 rounded-full bg-forest-600 text-white text-xs flex items-center justify-center font-bold flex-shrink-0">2</div>
+            <p class="text-forest-700 text-xs font-semibold tracking-wider uppercase">Golf Plan Selection</p>
+          </div>
+
+          <div class="space-y-2.5">
+            <label id="lbl-silver" class="flex items-center justify-between gap-3 border-2 border-gray-100 rounded-xl px-5 py-4 cursor-pointer hover:border-forest-400 transition-colors" onclick="selectPlan('silver')">
+              <div class="flex items-center gap-3">
+                <input type="radio" name="plan" value="silver" class="accent-forest-600 w-4 h-4" />
+                <div>
+                  <span class="font-bold text-forest-800 text-sm">Silver</span>
+                  <span class="text-gray-400 text-xs ml-2">Facility access + video curriculum</span>
+                </div>
+              </div>
+              <span class="text-forest-700 font-bold text-sm flex-shrink-0">20,000 THB<span class="text-gray-400 font-normal text-xs"> / yr</span></span>
+            </label>
+            <label id="lbl-gold" class="flex items-center justify-between gap-3 border-2 border-gray-100 rounded-xl px-5 py-4 cursor-pointer hover:border-forest-400 transition-colors" onclick="selectPlan('gold')">
+              <div class="flex items-center gap-3">
+                <input type="radio" name="plan" value="gold" class="accent-forest-600 w-4 h-4" />
+                <div>
+                  <span class="font-bold text-forest-800 text-sm">Gold</span>
+                  <span class="text-gray-400 text-xs ml-2">Semi-private lessons + unlimited range</span>
+                </div>
+              </div>
+              <span class="text-forest-700 font-bold text-sm flex-shrink-0">50,000 THB<span class="text-gray-400 font-normal text-xs"> / yr</span></span>
+            </label>
+            <label id="lbl-platinum" class="flex items-center justify-between gap-3 border-2 border-gray-100 rounded-xl px-5 py-4 cursor-pointer hover:border-forest-400 transition-colors" onclick="selectPlan('platinum')">
+              <div class="flex items-center gap-3">
+                <input type="radio" name="plan" value="platinum" class="accent-forest-600 w-4 h-4" />
+                <div>
+                  <span class="font-bold text-forest-800 text-sm">Platinum</span>
+                  <span class="text-gray-400 text-xs ml-2">Private lessons + swing analysis</span>
+                </div>
+              </div>
+              <span class="text-forest-700 font-bold text-sm flex-shrink-0">80,000 THB<span class="text-gray-400 font-normal text-xs"> / yr</span></span>
+            </label>
+            <label id="lbl-undecided" class="flex items-center justify-between gap-3 border-2 border-gray-100 rounded-xl px-5 py-4 cursor-pointer hover:border-forest-400 transition-colors" onclick="selectPlan('undecided')">
+              <div class="flex items-center gap-3">
+                <input type="radio" name="plan" value="undecided" class="accent-forest-600 w-4 h-4" />
+                <div><span class="font-semibold text-gray-500 text-sm">Not decided yet / I'd like to discuss</span></div>
+              </div>
+            </label>
+          </div>
+
+          <!-- Step 3: Add-on option -->
+          <div class="flex items-center gap-3 pb-1 border-b border-gray-100 pt-2">
+            <div class="w-6 h-6 rounded-full bg-forest-600 text-white text-xs flex items-center justify-center font-bold flex-shrink-0">3</div>
+            <p class="text-forest-700 text-xs font-semibold tracking-wider uppercase">Application Service Add-on (optional)</p>
+          </div>
+
+          <label class="flex items-start gap-4 rounded-2xl p-5 cursor-pointer transition-all border-2" id="addon-label" style="border-color: rgba(22,101,52,0.15); background: rgba(22,101,52,0.03);">
+            <input type="checkbox" id="addon-check" name="addon" value="yes" class="accent-forest-600 w-5 h-5 mt-0.5 flex-shrink-0" onchange="toggleAddon(this)" />
+            <div class="flex-1">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-forest-800 text-sm">Add DTV Application Service</span>
+                <span class="text-forest-700 font-bold text-sm">+10,000 THB</span>
+              </div>
+              <p class="text-gray-500 text-xs leading-relaxed">Document prep, filing &amp; embassy liaison · <span class="text-forest-700 font-semibold">100% refund if rejected</span> · 96% success rate</p>
+            </div>
+          </label>
+
+          <!-- Step 4: Hearing -->
+          <div class="flex items-center gap-3 pb-1 border-b border-gray-100 pt-2">
+            <div class="w-6 h-6 rounded-full bg-forest-600 text-white text-xs flex items-center justify-center font-bold flex-shrink-0">4</div>
+            <p class="text-forest-700 text-xs font-semibold tracking-wider uppercase">A Few Quick Questions</p>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Can you likely meet the 500,000 THB bank balance requirement?</label>
+            <div class="grid grid-cols-3 gap-2 text-xs">
+              <label class="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-xl px-3 py-3 cursor-pointer hover:border-forest-400 transition-colors">
+                <input type="radio" name="balance" value="yes" class="accent-forest-600" /> Yes, I can
+              </label>
+              <label class="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-xl px-3 py-3 cursor-pointer hover:border-forest-400 transition-colors">
+                <input type="radio" name="balance" value="unsure" class="accent-forest-600" /> Not sure
+              </label>
+              <label class="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-xl px-3 py-3 cursor-pointer hover:border-forest-400 transition-colors">
+                <input type="radio" name="balance" value="no" class="accent-forest-600" /> It's difficult
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Your current location / situation</label>
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <label class="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-xl px-3 py-3 cursor-pointer hover:border-forest-400 transition-colors">
+                <input type="radio" name="status" value="japan" class="accent-forest-600" /> Based in Japan
+              </label>
+              <label class="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-xl px-3 py-3 cursor-pointer hover:border-forest-400 transition-colors">
+                <input type="radio" name="status" value="bangkok" class="accent-forest-600" /> Based in Bangkok
+              </label>
+              <label class="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-xl px-3 py-3 cursor-pointer hover:border-forest-400 transition-colors">
+                <input type="radio" name="status" value="nomad" class="accent-forest-600" /> Digital nomad
+              </label>
+              <label class="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-xl px-3 py-3 cursor-pointer hover:border-forest-400 transition-colors">
+                <input type="radio" name="status" value="other" class="accent-forest-600" /> Other
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Any questions or additional information?</label>
+            <textarea rows="3" placeholder="Feel free to share anything that's on your mind…" class="form-field w-full rounded-xl px-4 py-3 text-sm resize-none"></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary w-full py-4 rounded-xl text-sm font-bold">
+            <span><i class="fas fa-paper-plane mr-2"></i> Contact Us (Free · No payment required)</span>
+          </button>
+
+          <p class="text-gray-400 text-[10px] text-center leading-relaxed">After submitting, a team member will contact you within 24 hours. No payment is collected via this form.<br />By submitting you agree to our Privacy Policy.</p>
+        </form>
+
+        <div id="success-msg" class="hidden bg-white rounded-3xl p-12 text-center shadow-lg border border-forest-600/8">
+          <div class="w-16 h-16 rounded-full bg-forest-600/10 flex items-center justify-center mx-auto mb-5">
+            <i class="fas fa-check text-forest-600 text-2xl"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-forest-800 mb-3">Thank You!</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">A team member will be in touch within 24 hours.<br />For urgent enquiries, please reach us via LINE.</p>
+        </div>
+    </div>
+
+    <!-- Contact Info (below form) -->
+    <div class="mt-8 grid sm:grid-cols-2 gap-5 fade-up">
+
+      <!-- Location & links -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-forest-600/8 flex flex-col gap-3">
+        <div>
+          <p class="font-bold text-forest-800 text-sm mb-0.5">Golf DTV — Thailand Visa Agency</p>
+          <p class="text-gray-400 text-xs">Partner school: Ken's Golf Bangkok</p>
+        </div>
+        <div class="space-y-2.5 text-sm text-gray-500 pt-1 border-t border-gray-100">
+          <div class="flex items-start gap-3">
+            <i class="fas fa-train text-forest-500 mt-0.5 flex-shrink-0 text-xs"></i>
+            <span class="text-xs leading-relaxed">Steps from BTS Sukhumvit Line, Thong Lo station<br /><span class="text-gray-400">Sukhumvit Soi 53, Watthana, Bangkok</span></span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-globe text-forest-500 flex-shrink-0 text-xs"></i>
+            <a href="https://www.kensgolfbangkok.com" target="_blank" class="text-xs hover:text-forest-600 transition-colors">www.kensgolfbangkok.com</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fab fa-line text-forest-500 flex-shrink-0 text-xs"></i>
+            <span class="text-xs">Available on LINE</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-envelope text-forest-500 flex-shrink-0 text-xs"></i>
+            <span class="text-xs">Email &amp; online meetings also available</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="bg-forest-800 rounded-2xl p-6 text-white">
+        <div class="text-green-400 text-xs tracking-widest uppercase font-bold mb-3">Supported Languages — 6</div>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-white/10 border border-white/10 rounded-full px-3 py-1 text-xs flex items-center gap-1.5"><span>🇯🇵</span> 日本語</span>
+          <span class="bg-white/10 border border-white/10 rounded-full px-3 py-1 text-xs flex items-center gap-1.5"><span>🇬🇧</span> English</span>
+          <span class="bg-white/10 border border-white/10 rounded-full px-3 py-1 text-xs flex items-center gap-1.5"><span>🇨🇳</span> 中文</span>
+          <span class="bg-white/10 border border-white/10 rounded-full px-3 py-1 text-xs flex items-center gap-1.5"><span>🇰🇷</span> 한국어</span>
+          <span class="bg-white/10 border border-white/10 rounded-full px-3 py-1 text-xs flex items-center gap-1.5"><span>🇹🇭</span> ภาษาไทย</span>
+          <span class="bg-white/10 border border-white/10 rounded-full px-3 py-1 text-xs flex items-center gap-1.5 opacity-60"><span>🇷🇺</span> Русский <span class="text-white/30 text-[9px] ml-1">Coming soon</span></span>
+        </div>
+        <p class="text-white/35 text-xs leading-relaxed">Email, LINE, and Zoom meetings all available.<br />Contact us freely in your native language.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════ -->
+<footer class="bg-forest-900 text-white pt-16 pb-8">
+  <div class="max-w-5xl mx-auto px-5">
+
+    <div class="grid md:grid-cols-4 gap-10 mb-12">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
+            <i class="fas fa-golf-ball-tee text-green-300 text-sm"></i>
+          </div>
+          <div>
+            <div class="font-bold text-base">Golf <span class="text-green-400">DTV</span></div>
+            <div class="text-white/40 text-[9px] tracking-widest uppercase">Thailand Visa Agency</div>
+          </div>
+        </div>
+        <p class="text-white/40 text-xs leading-relaxed mb-5 max-w-xs">
+          The specialist agency that pioneered the golf-based DTV application route. Through our partnership with Thailand PGA-certified pros, we deliver reliable DTV visa approval.
+        </p>
+        <div class="flex gap-3">
+          <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/30 hover:text-green-400 hover:border-green-400/30 transition-colors text-xs"><i class="fab fa-line"></i></a>
+          <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/30 hover:text-green-400 hover:border-green-400/30 transition-colors text-xs"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/30 hover:text-green-400 hover:border-green-400/30 transition-colors text-xs"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-green-400 text-xs tracking-[0.2em] uppercase font-bold mb-5">Menu</h4>
+        <ul class="space-y-3 text-white/40 text-xs">
+          <li><a href="#about" class="hover:text-white transition-colors">What is DTV?</a></li>
+          <li><a href="#plans" class="hover:text-white transition-colors">Plans &amp; Pricing</a></li>
+          <li><a href="#trust" class="hover:text-white transition-colors">Credentials &amp; Profile</a></li>
+          <li><a href="#flow" class="hover:text-white transition-colors">How It Works</a></li>
+          <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors">Free Consultation</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-green-400 text-xs tracking-[0.2em] uppercase font-bold mb-5">Address</h4>
+        <div class="text-white/40 text-xs space-y-2 leading-relaxed">
+          <p>135/2 Fl.1, Soi Sukhumvit 53</p>
+          <p>Khlong Toei Nuea, Watthana</p>
+          <p>Bangkok 10110</p>
+          <a href="#" class="text-green-400/70 hover:text-green-400 transition-colors mt-2 block">www.kensgolfbangkok.com</a>
+        </div>
+        <div class="mt-5">
+          <h4 class="text-green-400 text-xs tracking-[0.2em] uppercase font-bold mb-3">Legal</h4>
+          <ul class="space-y-2 text-white/30 text-xs">
+            <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Terms of Use</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Specified Commercial Transactions Act</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-white/20 text-xs">
+      <p>© 2025 Golf DTV Thailand Visa Agency. All rights reserved.</p>
+      <p>Partners: Thailand PGA-Certified Pros Only · Thai Ministry of Sport Approved Facility</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════
+     JAVASCRIPT
+     ═══════════════════════════════════════════════ -->
+<script>
+  /* ── Header scroll ────────────────────── */
+  const hdr = document.getElementById('main-header');
+  const floatCTA = document.getElementById('float-cta');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) {
+      hdr.classList.add('scrolled');
+      floatCTA.classList.add('show');
+    } else {
+      hdr.classList.remove('scrolled');
+      floatCTA.classList.remove('show');
+    }
+  });
+
+  /* ── Mobile menu ──────────────────────── */
+  function toggleMobile() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  }
+
+  /* ── Scroll animations ────────────────── */
+  const anim = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); anim.unobserve(e.target); }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.fade-up,.fade-left,.fade-right,.fade-scale').forEach(el => anim.observe(el));
+
+  /* ── Success rate bar animation ──────────── */
+  const barObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const w = e.target.dataset.width;
+        setTimeout(() => { e.target.style.width = w + '%'; }, 200);
+        barObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.success-bar').forEach(el => barObs.observe(el));
+
+  /* ── FAQ ──────────────────────────────── */
+  function toggleFaq(btn) {
+    const content = btn.nextElementSibling;
+    const chevron = btn.querySelector('.faq-chevron');
+    const isOpen = content.classList.contains('open');
+    document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('open'));
+    document.querySelectorAll('.faq-chevron').forEach(c => c.classList.remove('open'));
+    if (!isOpen) { content.classList.add('open'); chevron.classList.add('open'); }
+  }
+
+  /* ── Plan selection highlight ─────────── */
+  function selectPlan(val) {
+    ['silver','gold','platinum','undecided'].forEach(p => {
+      const lbl = document.getElementById('lbl-' + p);
+      if (lbl) lbl.style.borderColor = (p === val) ? '#166634' : '';
+    });
+  }
+
+  /* ── Addon toggle ──────────────────────── */
+  function toggleAddon(cb) {
+    const lbl = document.getElementById('addon-label');
+    lbl.style.borderColor = cb.checked ? '#166534' : 'rgba(22,101,52,0.15)';
+    lbl.style.background = cb.checked ? 'rgba(22,101,52,0.07)' : 'rgba(22,101,52,0.03)';
+  }
+
+  /* ── Form submit ──────────────────────── */
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const success = document.getElementById('success-msg');
+    form.style.opacity = '0';
+    form.style.transition = 'opacity 0.4s';
+    setTimeout(() => {
+      form.style.display = 'none';
+      success.classList.remove('hidden');
+      setTimeout(() => { success.style.opacity = '1'; }, 50);
+    }, 400);
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tome1414.github.io/dtv-lp/sitemap.xml
