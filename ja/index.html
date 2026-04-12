@@ -219,9 +219,17 @@
 
     /* ─── FAQ ──────────────────────────────────── */
     .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.45s ease; }
-    .faq-content.open { max-height: 400px; }
+    .faq-content.open { max-height: 900px; }
     .faq-chevron { transition: transform 0.3s ease; }
     .faq-chevron.open { transform: rotate(180deg); }
+    /* FAQ Category headers */
+    .faq-cat-label { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+    .faq-cat-letter { width: 28px; height: 28px; border-radius: 8px; background: #0f4324; color: #fff; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .faq-cat-letter.amber { background: #92400e; }
+    .faq-cat-title { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #0f4324; }
+    .faq-cat-title.amber { color: #92400e; }
+    .faq-cat-line { flex: 1; height: 1px; background: #d1fae5; }
+    .faq-cat-line.amber { background: #fde68a; }
 
     /* ─── Form ─────────────────────────────────── */
     .form-field {
@@ -454,7 +462,7 @@
     <!-- Badge -->
     <div class="fade-up inline-flex items-center gap-2 bg-white/8 border border-white/15 backdrop-blur-sm rounded-full px-5 py-2 text-white/80 text-xs tracking-wider mb-8">
       <span class="w-2 h-2 rounded-full bg-green-400 pulse-dot"></span>
-      業界初 ・ ゴルフDTV 先駆者エージェント ・ Thailand PGA公認プロのみ提携
+      業界初 ・ タイ政府スポーツ省確認済み認定施設 ・ ゴルフDTV 唯一の公式エージェント
     </div>
 
     <!-- Headline -->
@@ -464,9 +472,9 @@
     </h1>
 
     <p class="fade-up d2 text-white/60 text-base md:text-lg max-w-xl mx-auto leading-relaxed mb-10">
-      Thailand PGA公認プロとの提携により、タイ政府公認の<br class="hidden sm:block" />
-      DTVビザ（Destination Thailand Visa）を確実に取得。<br />
-      専門エージェントがあなたの申請を最初から最後までサポートします。
+      業界で唯一確立したゴルフDTV申請ルートで、<br class="hidden sm:block" />
+      5年間のタイ長期滞在ビザを確実取得。<br />
+      タイ政府機関の承認を受けた書類体系と<strong class="text-white/85">成功率96%</strong>で、申請を完全サポート。
     </p>
 
     <!-- CTA -->
@@ -609,10 +617,10 @@
           タイ政府の「ソフトパワー政策」が<br />ゴルフを公認している
         </h3>
         <p class="text-gray-600 text-sm leading-relaxed mb-5">
-          DTVビザの「Sportsカテゴリー」は、タイ政府スポーツ省が認定したスポーツ活動への参加を申請理由とします。弊社が提携するゴルフスクールは、タイ政府スポーツ省の視察・確認済みの認定施設です。
+          DTVビザの「Sportsカテゴリー」は、タイ政府スポーツ省が認定したスポーツ活動への参加を申請理由とします。弊社が提携するゴルフスクールは、タイ政府スポーツ省の視察・確認済みの認定施設です。<strong class="text-forest-700">ゴルフ経由のDTV申請を実現する公式書類体系を持つのは、業界内で弊社のみです。</strong>
         </p>
         <p class="text-gray-600 text-sm leading-relaxed mb-7">
-          弊社が提携するのは<strong class="text-forest-700">Thailand PGA公認ティーチングプロのみ</strong>。タイ政府が求める要件を完全に満たした施設から発行される「公式受入レター」を取得し、弊社エージェントが申請書類の準備から提出まで一括代行します。
+          弊社が提携するのは<strong class="text-forest-700">Thailand PGA公認ティーチングプロのみ</strong>。長年の政府機関との関係構築により確立した、タイ当局の審査基準を完全クリアした「公式受入レター・カリキュラム証明書」の発行体制は、<strong class="text-forest-700">容易に参入・模倣できない弊社固有の参入障壁</strong>です。弊社エージェントが申請書類の準備から提出まで一括代行します。
         </p>
 
         <!-- Badges -->
@@ -895,8 +903,8 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mb-16 fade-up">
       <div class="text-center p-6 rounded-2xl" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
         <div class="text-4xl mb-3">🏌️</div>
-        <p class="text-green-300 font-bold text-sm mb-1">業界初</p>
-        <p class="text-white/50 text-xs leading-relaxed">ゴルフDTVルートを最初に開拓した先駆者エージェント</p>
+        <p class="text-green-300 font-bold text-sm mb-1">業界初・業界唯一</p>
+        <p class="text-white/50 text-xs leading-relaxed">ゴルフDTVルートを開拓した先駆者。独自の許認可体制は競合他社が容易に参入・模倣できない強固な参入障壁</p>
       </div>
       <div class="text-center p-6 rounded-2xl" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
         <div class="text-4xl mb-3">🏆</div>
@@ -983,8 +991,8 @@
             <i class="fas fa-flag text-green-400 text-sm"></i>
           </div>
           <div>
-            <h4 class="text-white font-semibold text-sm mb-1">ゴルフDTVの先駆者として業界を牽引</h4>
-            <p class="text-white/45 text-xs leading-relaxed">ゴルフ経由のDTV取得ルートを業界で初めて確立。このノウハウと実績は他に追随を許しません。</p>
+            <h4 class="text-white font-semibold text-sm mb-1">他社が追随できない独自ノウハウと許認可体制</h4>
+            <p class="text-white/45 text-xs leading-relaxed">ゴルフ経由DTV申請ルートを業界で初めて確立。タイ政府機関との信頼関係と独自の書類体系・許認可は、容易に参入・模倣できない弊社固有の強みです。</p>
           </div>
         </div>
       </div>
@@ -1140,89 +1148,343 @@
 <section id="faq" class="py-24 bg-white">
   <div class="max-w-3xl mx-auto px-5">
 
-    <div class="text-center mb-16 fade-up">
+    <div class="text-center mb-14 fade-up">
       <p class="text-forest-600 text-xs tracking-[0.25em] uppercase font-semibold mb-3">FAQ</p>
       <div class="green-divider mb-6"></div>
       <h2 class="font-serif text-3xl md:text-4xl font-bold text-forest-900">
         よくある<span class="green-text">ご質問</span>
       </h2>
+      <p class="text-gray-500 text-sm mt-4 max-w-md mx-auto leading-relaxed">
+        カテゴリー別に17の質問を整理しました。気になる質問をタップして回答を確認ください。
+      </p>
     </div>
 
-    <div class="divide-y divide-gray-100 fade-up">
+    <div class="space-y-10 fade-up">
 
-      <div class="py-1">
-        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-forest-800 text-sm md:text-base">DTVビザを申請するのに、本当にゴルフが必要ですか？</span>
-          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
-        </button>
-        <div class="faq-content">
-          <p class="text-gray-500 text-sm leading-relaxed pb-5">はい、DTVビザのSportsカテゴリーで申請する場合、タイ政府が認定するスポーツ活動への参加が必要です。Ken's Golf Bangkokへの入会がその証明となります。ゴルフ未経験の方でも問題ありません。初心者向けのプログラムも用意しています。</p>
+      <!-- ─── CATEGORY A ─────────────────────────── -->
+      <div>
+        <div class="faq-cat-label">
+          <span class="faq-cat-letter">A</span>
+          <span class="faq-cat-title">DTVビザの基本・他ビザとの比較</span>
+          <span class="faq-cat-line"></span>
+        </div>
+        <div class="divide-y divide-gray-100 rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">DTVビザとは何ですか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">タイ政府が2024年7月に新設した長期滞在ビザです。有効期間は5年間で、何度でも出入国が可能（マルチプルエントリー）です。1回の入国につき最大180日の滞在が可能で、現地でさらに180日の延長手続きをすれば、1回の入国で最長約1年間の連続滞在が可能です。</p>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">本当に「ゴルフ受講」でDTVビザを5年間取得できますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <div class="pb-5 px-5 space-y-3 text-sm text-gray-500 leading-relaxed">
+                <p>はい、可能です。弊社 Golf DTV は「ゴルフ受講によるDTVビザ取得」において<strong class="text-forest-700">業界初の実績を持つパイオニアエージェント</strong>です。</p>
+                <p>DTVビザの「ソフトパワー（タイ文化・スポーツ）」枠の適用には、単なるレッスン提供だけでなく、タイ政府関係機関（スポーツ省・外務省等）の厳格な認可要件のクリア、および当局基準に完全合致した公式カリキュラムの提示が必須です。</p>
+                <p>弊社は長年にわたるタイ政府機関との強固な信頼関係と、<strong class="text-forest-700">他社が容易には参入・模倣できない独自の申請ノウハウおよび許認可体制</strong>を確立しています。実際に業界第1号としてビザ取得に成功した事例が、その確実性を証明しています。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">タイランドエリート（Thailand Privilege）と比べてお得ですか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">圧倒的に初期費用を抑えられます。タイランドエリートの5年プランは最低90万バーツ（約400万円）の会員費が必要ですが、DTVビザは弊社スクール受講料と大使館申請料（10,000バーツ）のみで同等期間（5年）の滞在資格が得られます。</p>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">語学学校のEDビザ（学生ビザ）との違いは何ですか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">EDビザのように数ヶ月ごとの煩わしいビザ更新や、イミグレーションによる厳しい出席確認・語学テストの義務がありません。DTVビザは一度取得すれば5年間有効で、より自由度の高いタイ滞在が可能です。</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="py-1">
-        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-forest-800 text-sm md:text-base">500,000 THBの残高はどのように証明しますか？</span>
-          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
-        </button>
-        <div class="faq-content">
-          <p class="text-gray-500 text-sm leading-relaxed pb-5">日本の銀行口座の残高証明書（英文）が基本です。500,000 THBは申請時のレートで約250万円（2024年現在）。証券口座・不動産などは原則認められません。詳細は相談時にご案内します。</p>
+      <!-- ─── CATEGORY B ─────────────────────────── -->
+      <div>
+        <div class="faq-cat-label">
+          <span class="faq-cat-letter">B</span>
+          <span class="faq-cat-title">コース・受講について</span>
+          <span class="faq-cat-line"></span>
+        </div>
+        <div class="divide-y divide-gray-100 rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">ゴルフ初心者でもDTVビザの申請要件を満たせますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">もちろんです。DTVビザの「ソフトパワー枠」はプロ育成ではなく、スポーツを通じたタイ文化交流が目的です。クラブを握ったことのない初心者の方でも、弊社スクールのカリキュラムを受講することで問題なく証明書を発行できます。クラブは無料でお貸しします。</p>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">レッスンは日本語で受けられますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">はい、日本人スタッフおよび日本語が話せるプロインストラクターが在籍しています。タイ語や英語に不安がある方でも、レッスンからビザ手続きのサポートまで安心してお任せいただけます。</p>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">スクールには毎日通わなければなりませんか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">毎日の通学は不要です。お申し込みいただいたコース（週2〜3回など）のスケジュールに合わせ、ご自身のペースで受講していただけます。</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="py-1">
-        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-forest-800 text-sm md:text-base">申請はどこでできますか？日本から申請できますか？</span>
-          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
-        </button>
-        <div class="faq-content">
-          <p class="text-gray-500 text-sm leading-relaxed pb-5">日本にいながら、タイ政府の公式e-Visaサイト（thaievisa.go.th）からオンラインで申請できます。日本のタイ大使館・領事館への来館は不要です。申請代行サービスもご用意しています。</p>
+      <!-- ─── CATEGORY C ─────────────────────────── -->
+      <div>
+        <div class="faq-cat-label">
+          <span class="faq-cat-letter">C</span>
+          <span class="faq-cat-title">ご家族の帯同・申請手続きについて</span>
+          <span class="faq-cat-line"></span>
+        </div>
+        <div class="divide-y divide-gray-100 rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">家族（配偶者・子供）も一緒にタイへ移住できますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">はい、可能です。DTVビザ取得者（主申請者）の法的な配偶者、および20歳未満のお子様は「DTV扶養家族枠」として同時にビザを申請できます。</p>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">家族もゴルフスクールに申し込む必要がありますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">いいえ、不要です。ゴルフスクールへのお申し込みは主申請者様1名分のみで結構です。ご家族様は婚姻証明書・出生証明書などの関係書類をご用意いただくだけで、スクール代なしでビザ申請が可能です。</p>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">申込みから受講証明書の発行まで何日かかりますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">コース受講料のお支払い確認後、通常3〜5営業日以内にDTVビザ申請に必要な公式書類（入学許可証・受講証明書など）をPDFにて発行いたします。</p>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">現在タイ国内に滞在中ですが、DTVビザに切り替えられますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">DTVビザは原則として<strong class="text-forest-700">タイ国外</strong>にあるタイ大使館・領事館での申請（e-Visa含む）が必要です。現在タイ国内にいらっしゃる場合は、一度近隣国（ラオス・マレーシア・日本など）へ出国し、現地のタイ大使館へ申請していただく必要があります。</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="py-1">
-        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-forest-800 text-sm md:text-base">ゴルフスクールには毎月通う必要がありますか？</span>
-          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
-        </button>
-        <div class="faq-content">
-          <p class="text-gray-500 text-sm leading-relaxed pb-5">DTVビザ申請のために毎月通う義務はありません。ただし、各プランに規定されたセッション数は年間を通じて消化していただくことを推奨しています。ビザ更新時に活動実績を求められる場合もあります。</p>
+      <!-- ─── CATEGORY D ─────────────────────────── -->
+      <div>
+        <div class="faq-cat-label">
+          <span class="faq-cat-letter amber">D</span>
+          <span class="faq-cat-title amber">費用・返金・保証について</span>
+          <span class="faq-cat-line amber"></span>
+        </div>
+        <div class="divide-y divide-amber-50 rounded-2xl border border-amber-100 overflow-hidden shadow-sm">
+
+          <div class="bg-amber-50/40">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">スクール代のほかに、ビザ取得にかかる費用はありますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">はい。タイ大使館へ直接お支払いいただく「ビザ申請料（10,000バーツ、または申請国の現地通貨相当額）」が必要です。また、銀行残高証明書などお客様ご自身で用意する書類の発行手数料が別途かかる場合があります。</p>
+            </div>
+          </div>
+
+          <div class="bg-amber-50/40">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">万が一ビザが却下された場合、返金されますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <div class="pb-5 px-5 space-y-3 text-sm text-gray-500 leading-relaxed">
+                <p><strong class="text-forest-700">【申請代行オプションをご利用の場合】</strong>万が一ビザが却下された場合、スクール受講料および代行サービス費用を<strong class="text-forest-700">全額返金</strong>いたします。</p>
+                <p><strong class="text-gray-600">【ご自身で申請された場合】</strong>弊社の書類不備以外の理由による却下の場合は、規定に従い返金いたします。</p>
+                <p class="text-gray-400 text-xs">※残高証明不足・過去の犯罪歴・オーバーステイ歴など、明らかなお客様事由による却下は返金対象外となります。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-amber-50/40">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">50万バーツの残高証明は常に口座に入れておく必要がありますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">大使館への申請時に50万バーツ（または日本円等の相当額）以上の預金残高証明書の提出が必須です。審査通過後は資金を動かしても問題ありませんが、次回入国時などに提示を求められる可能性もあるため、ある程度の資金証明を維持されることを推奨しています。</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="py-1">
-        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-forest-800 text-sm md:text-base">タイでリモートワーク・仕事はできますか？</span>
-          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
-        </button>
-        <div class="faq-content">
-          <p class="text-gray-500 text-sm leading-relaxed pb-5">DTVビザはタイ国内での就労（タイ企業への労働提供）は認められていません。しかし、海外の雇用主・クライアントへのリモートワークは現状グレーゾーンです。ノマドワーカーが多く利用しています。法的リスクを含め、個別にご説明します。</p>
+      <!-- ─── CATEGORY E ─────────────────────────── -->
+      <div>
+        <div class="faq-cat-label">
+          <span class="faq-cat-letter">E</span>
+          <span class="faq-cat-title">タイ滞在中の生活・ルールについて</span>
+          <span class="faq-cat-line"></span>
         </div>
-      </div>
+        <div class="divide-y divide-gray-100 rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
 
-      <div class="py-1">
-        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-forest-800 text-sm md:text-base">申請代行費用はいくらですか？</span>
-          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
-        </button>
-        <div class="faq-content">
-          <p class="text-gray-500 text-sm leading-relaxed pb-5">申請代行費用はゴルフプラン費用とは別途になります。お客様の状況（書類の準備状況・国籍・申請場所等）によって異なるため、無料相談にてお見積りをご提示します。</p>
-        </div>
-      </div>
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">DTVビザでタイ国内で働くことはできますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">タイ国内の企業に就職して給与を得ることは法律で禁止されています。ただし、日本の会社からの給与や海外クライアントへのリモートワーク・フリーランス報酬を得ることは問題ありません。ノマドワーカーや海外リモート勤務者に多くご利用いただいています。</p>
+            </div>
+          </div>
 
-      <div class="py-1">
-        <button class="w-full flex items-center justify-between py-5 text-left gap-4" onclick="toggleFaq(this)">
-          <span class="font-semibold text-forest-800 text-sm md:text-base">ビザが却下されることはありますか？</span>
-          <i class="fas fa-chevron-down text-forest-500 text-sm flex-shrink-0 faq-chevron"></i>
-        </button>
-        <div class="faq-content">
-          <p class="text-gray-500 text-sm leading-relaxed pb-5">書類の不備や残高証明の未達など、申請要件を満たさない場合は却下の可能性があります。弊社では提出前に全書類を精査し、却下リスクを最小化します。申請代行プランをご利用の場合、万が一却下となっても代行費用を<strong class="text-forest-700">100%返金</strong>いたします。</p>
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">DTVビザでタイの銀行口座を開設できますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">はい、可能です。長期滞在ビザ（DTV）を保有していれば、タイの主要銀行で口座開設が比較的スムーズに行えます（銀行・支店により対応が異なる場合があります）。ご希望の方にはサポートもご提供しています。</p>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <button class="w-full flex items-center justify-between py-4 px-5 text-left gap-4" onclick="toggleFaq(this)">
+              <span class="font-semibold text-forest-800 text-sm leading-snug">1年間コースを申込んだ場合、2年目以降のビザはどうなりますか？</span>
+              <i class="fas fa-chevron-down text-forest-400 text-xs flex-shrink-0 faq-chevron"></i>
+            </button>
+            <div class="faq-content">
+              <p class="text-gray-500 text-sm leading-relaxed pb-5 px-5">DTVビザ自体は一度取得すれば5年間有効です。ただし、入国審査時に「現在もソフトパワー要件（継続受講）を満たしているか」を確認されるケースも報告されています。5年間安心して滞在を継続するために、コース修了後の継続更新プランもご用意しております。詳細はご相談ください。</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
     </div>
+
   </div>
 </section>
+
+<!-- FAQ Structured Data (JSON-LD) for SEO/AIO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "DTVビザとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "タイ政府が2024年7月に新設した長期滞在ビザです。有効期間は5年間で、何度でも出入国が可能（マルチプルエントリー）です。1回の入国につき最大180日の滞在が可能で、現地でさらに180日の延長手続きをすれば、1回の入国で最長約1年間の連続滞在が可能です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "本当にゴルフ受講でDTVビザを5年間取得できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、可能です。Golf DTVはゴルフ受講によるDTVビザ取得において業界初の実績を持つパイオニアエージェントです。タイ政府スポーツ省認定施設との提携と、他社が容易には参入・模倣できない独自の申請ノウハウおよび許認可体制により、確実なビザ取得をサポートします。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "タイランドエリートと比べてお得ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "タイランドエリートの5年プランは最低90万バーツ（約400万円）の会員費が必要ですが、DTVビザはスクール受講料と大使館申請料（10,000バーツ）のみで同等期間の滞在資格が得られます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "語学学校のEDビザとの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EDビザのように数ヶ月ごとのビザ更新や出席確認・語学テストの義務がありません。DTVビザは一度取得すれば5年間有効で、より自由度の高いタイ滞在が可能です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ゴルフ初心者でも申請できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、問題ありません。DTVビザのソフトパワー枠はプロ育成ではなくスポーツを通じたタイ文化交流が目的です。初心者でもカリキュラムを受講することで証明書を発行できます。クラブは無料でお貸しします。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "家族も一緒にタイへ移住できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、可能です。主申請者の法的な配偶者と20歳未満のお子様はDTV扶養家族枠として同時にビザを申請できます。ご家族のゴルフスクール申し込みは不要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "万が一ビザが却下された場合、返金されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "申請代行オプションをご利用の場合、万が一ビザが却下された場合はスクール受講料および代行サービス費用を全額返金いたします。ただし、残高証明不足や過去の犯罪歴など明らかなお客様事由による却下は対象外です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "DTVビザでタイ国内で働くことはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "タイ国内の企業への就労は禁止されています。ただし、日本の会社からの給与や海外クライアントへのリモートワーク・フリーランス報酬は問題ありません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "現在タイ国内に滞在中ですが、DTVビザに切り替えられますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DTVビザは原則としてタイ国外にあるタイ大使館・領事館での申請が必要です。現在タイ国内にいる場合は、一度近隣国（ラオス・マレーシア・日本など）へ出国してから申請していただく必要があります。"
+      }
+    }
+  ]
+}
+</script>
 
 
 <!-- ═══════════════════════════════════════════════
